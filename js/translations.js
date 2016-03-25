@@ -3,6 +3,9 @@
     "french": [{
         "Money Manager Ex User Manual":"Manuel utilisateur de Money Manager Ex"
     }],
+    "hungarian": [{
+        "Money Manager Ex User Manual":"Money Manager Ex felhasználói kézikönyv"
+    }],
     "italian": [{
         "Money Manager Ex User Manual":"Manuale Utente di Money Manager Ex"
     }],
@@ -68,6 +71,12 @@
         , "new_db_6": ""
         , "new_db_7": ""
         , "new_db_8": ""
-
+        , "How can I contribute?": "Как можно помочь проекту MMEX?"
+        , "You can contribute by": "Вот те направления, по которым требуется содействие:"
+        , "Reporting bugs": "Сообщения об ошибках"
+        , "Translating to your language": "Перевод на ваш язык"
+        , "Helping spread the word": "Распространение программы"
+        , "faq_1": "Если вы&nbsp;C++ или JS программист, то можете поучаствовать в развитии MMEX кода."
+        , "faq_2": "Если вы счастливы в связи с тем, что с помощью MMEX сэкономили достаточно средств, то можете спонсировать некоторую сумму проекту MMEX."
     }]
 };

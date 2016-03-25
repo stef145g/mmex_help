@@ -23,10 +23,11 @@
         <tr>
             <td class="label label-info">Languages:</td>
             <td><a href="index.html?lang=french">French</a></td>
+            <td><a href="index.html?lang=hungarian">Hungarian</a></td>
             <td><a href="index.html?lang=italian">Italian</a></td>
+            <td><a href="index.html?lang=polish">Polish</a></td>
             <td><a href="index.html?lang=russian">Russian</a></td>
             <td><a href="index.html?lang=spanish">Spanish</a></td>
-            <td><a href="index.html?lang=polish">Polish</a></td>
         </tr>
     </table>
 
@@ -144,9 +145,20 @@
     <table class="table, small">
         <tr>
             <td class="i18n" id="concept_5">This can be simplified as shown in the following diagram:</td>
-            <td><img alt='MMEX Concept' src='img/mmex_concept.png'></td>
+            <td><img id="mmex_concept" alt='MMEX Concept' src='img/mmex_concept.png'></td>
         </tr>
     </table>
+    <script>
+        var lang = getParameterValue("lang").substring(0, 2);
+        var img_path = "img/mmex_concept.png";
+        if (lang == 'ru')
+            img_path = "img/mmex_concept_ru.png";
+        else if (lang == 'po')
+            img_path = "img/mmex_concept_po.png";
+        else if (lang == 'hu')
+            img_path = "img/mmex_concept_hu.png";
+        document.getElementById('mmex_concept').src = img_path;
+    </script>
     <p class="i18n" id="concept_6">
         One other important thing to consider is the currency we use to
         perform the transactions.
@@ -1741,23 +1753,28 @@
         <li class="i18n">Reporting bugs</li>
         <li class="i18n">Translating to your language</li>
         <li class="i18n">Helping spread the word</li>
-        <li class="i18n">
-            If you are a C++ expert, by helping extend MMEX developing
-            code.
+        <li class="i18n" id="faq_1">
+            If you are a C++ or JS expert, by helping extend MMEX developing code.
         </li>
-        <li class="i18n">
+        <li class="i18n" id="faq_2">
             If you are really very happy because you saved a lot of
             money by using MMEX, you can donate to the MMEX project.
         </li>
     </ul>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post"
-          target="_top">
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
         <input name="cmd" type="hidden" value="_donations">
-        <input name="business" type="hidden" value="moneymanagerex@moneymanagerex.org"> <input name="lc" type="hidden" value="US"> <input name="item_name" type="hidden"
-                                                                                                                                          value="MoneyManagerEx"> <input name="no_note" type="hidden"
-                                                                                                                                                                         value="0"> <input name="currency_code" type="hidden" value="USD"> <input name="bn" type="hidden" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-        <input alt="PayPal - The safer, easier way to pay online!"
-               name="submit" src="img\btn_donateCC_LG.gif" type="image">
+        <input name="business" type="hidden" value="moneymanagerex@moneymanagerex.org">
+        <input name="lc" type="hidden" value="US"> 
+        <input name="item_name" type="hidden" value="MoneyManagerEx"> 
+        <input name="no_note" type="hidden" value="0"> 
+        <input name="currency_code" type="hidden" value="USD"> 
+        <input name="bn" type="hidden" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+        <input id="paypal" alt="PayPal - The safer, easier way to pay online!"
+               name="submit" src="img/btn_donateCC_LG.gif" type="image">
+        <script type="text/javascript">
+            document.getElementById('paypal').src = "img/btn_donateCC_LG.gif";
+        </script>
+
     </form>
     <hr>
     <h3 class="i18n">What's the reason for the EX in the name of the software?</h3>
