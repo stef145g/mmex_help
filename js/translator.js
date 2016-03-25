@@ -21,6 +21,8 @@
         if (translation_str != "" & translation_str !== undefined) {
             element.innerHTML = translation_str;
         }
+        else
+            element.style.color = "#aa0000";
     }
 
 }
