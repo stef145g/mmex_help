@@ -3,7 +3,7 @@ function get_contents() {
     var level = 0;
 
     document.getElementById("contents").innerHTML =
-    document.getElementById("contents").innerHTML.replace(
+        document.getElementById("contents").innerHTML.replace(
         /<h([\d])>([^<]+)<\/h([\d])>/gi,
         function (str, openLevel, titleText, closeLevel) {
             if (openLevel != closeLevel) {
