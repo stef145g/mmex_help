@@ -1,4 +1,4 @@
-﻿function loaded()
+﻿function translate()
 {
 	var lang = getParameterValue("lang");
 	if (lang != "") String.locale = lang;
@@ -14,11 +14,13 @@
     for (var i = 0; i < elements.length; i++) 
     {
         var element = elements[i];
+        var element_str = element.innerHTML;
         var id = element.getAttribute('id');
-        var string = element.innerHTML;
-        if (id != null) string = id;
-        var item = my_lang[0][string];
-        element.innerHTML = (item == null) ? element.innerHTML : item;
+        if (id != null) element_str = id;
+        var translation_str = my_lang[0][element_str];
+        if (translation_str != "" & translation_str !== undefined) {
+            element.innerHTML = translation_str;
+        }
     }
 
 }
