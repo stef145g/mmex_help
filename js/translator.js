@@ -3,27 +3,24 @@
 	var lang = getParameterValue("lang");
 	if (lang != "") String.locale = lang;
 
-	//alert(lang);
-        var my_lang = localization[lang];
-        if (my_lang == null) 
-        {
-            my_lang = localization.english;
-        }
+	if (Object.keys(localization).indexOf(lang) > -1)
+	{
+	    console.log(lang)
 
-    var elements= document.getElementsByClassName('i18n');
-    for (var i = 0; i < elements.length; i++) 
-    {
-        var element = elements[i];
-        var element_str = element.innerHTML;
-        var id = element.getAttribute('id');
-        if (id != null) element_str = id;
-        var translation_str = my_lang[0][element_str];
-        if (translation_str != "" & translation_str !== undefined) {
-            element.innerHTML = translation_str;
-        }
-        else
-            element.style.color = "#aa0000";
-    }
+	    var elements = document.getElementsByClassName('i18n');
+	    for (var i = 0; i < elements.length; i++) {
+	        var element = elements[i];
+	        var element_str = element.innerHTML;
+	        var id = element.getAttribute('id');
+	        if (id != null) element_str = id;
+	        var translation_str = localization[lang][0][element_str];
+	        if (translation_str != "" & translation_str !== undefined) {
+	            element.innerHTML = translation_str;
+	        }
+	        else
+	            element.style.color = "#aa0000";
+	    }
+	}
 
 }
 

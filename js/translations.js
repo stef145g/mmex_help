@@ -1,5 +1,4 @@
 ﻿var localization = {
-    "english": [{}],
     "french": [{
         "Money Manager Ex User Manual":"Manuel utilisateur de Money Manager Ex"
     }],
@@ -16,21 +15,32 @@
         "Money Manager Ex User Manual":"Manual de usuario de Money Manager Ex"    
     }],
     "russian": [{
-        "Money Manager Ex User Manual":"Руководство пользователя Money Manager Ex"
+        "Money Manager Ex User Manual": "Руководство пользователя Money Manager Ex"
         , "Contents":"Содержание"
         , "Introduction":"Введение"
         , "Working towards better Financial Health":"Достижение финансового благополучия"
         , "Money Manager Ex Concepts":"Концепция Money Manager Ex"
 		, "Recommendations":"Рекомендации"
         , "Creating a New Database":"Создание базы данных"
-        , "Creating New Accounts":"Создание нового счёта"
+        , "Creating New Accounts": "Создание нового счёта"
+        , "Checking Account": "Банковский счёт"
+        , "Term Accounts": "Временный счёт"
+        , "Investment Account": "Инвестиционный счёт"
+        , "Account Setup Example:": "Пример счёта:"
+        , "Tip on using the Navigation Tree and Home page:": "Совет по использованию дерева навигации и Домашней страницы:"
         , "Creating New Transactions": "Создание новой транзакции"
+        , "New/Edit Transaction Dialog": "Диалог создания/редактирования транзакции"
+        , "Editing and Updating Transactions": "Редактирование транзакции"
+        , "Transaction Filtering in Accounts": "Фильтр транзакций в счёте"
+        , "Reconciling and Balancing Transactions": "Сверка и балансы"
+        , "Flagging transactions for followup": "Пометка транзакций для отслеживания"
         , "Editing Account Information": "Редактирование счёта"
         , "acc_edit_1": "После того как вы создали счёт, вы можете изменить любое из его полей следующим образом:"
         , "acc_edit_2": "Выберите имя счёта в навигационной панели и затем щёлкните правой кнопкой мыши, чтобы открыть контекстное меню. В контекстном меню выберите 'Редактировать счёт'. Измените желаемую информацию, а затем нажмите кнопку 'OK' для сохранения."
         , "acc_edit_3": "Выберите счёт в панели навигации, <br>Нажмите правую кнопку мыши и выберите пункт меню 'Редактировать счёт'"
         , "Working with Currencies":"Работа с валютами"
-        , "Working with Categories":"Работа с категориями"
+        , "Working with Categories": "Работа с категориями"
+        , "Split Categories": "Деление по категориям"
         , "Working with Payees":"Работа с получателями платежа"
         , "Import":"Импорт"
         , "Importing From CSV Files":"Импорт из CSV файлов"
