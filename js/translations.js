@@ -46,9 +46,11 @@
         , "Importing From CSV Files":"Импорт из CSV файлов"
         , "Importing From WebApp":"Импорт из WebApp файлов"
         , "Importing From QIF Files":"Импорт из QIF файлов"
-        , "Importing From Universal CSV Format":"Импорт из CSV файлов"
+        , "Importing From Universal CSV Format": "Импорт из CSV файлов"
+        , "Importing From XML File": "Импорт из XML файлов"
         , "Export":"Экспорт"
-        , "Exporting to QIF Files":"Экспорт в CSV файлы"
+        , "Exporting to QIF Files": "Экспорт в CSV файлы"
+        , "Exporting to XML Files": "Экспорт в XML файлы"
         , "Recurring Transactions":"Повторяющиеся транзакции"
         , "Assets":"Активы"
         , "Transaction Report Filter":"Фильтр транзакций"
@@ -98,6 +100,8 @@
         , "Helping spread the word": "Распространение программы"
         , "faq_1": "Если вы&nbsp;C++ или JS программист, то можете поучаствовать в развитии MMEX кода."
         , "faq_2": "Если вы счастливы в связи с тем, что с помощью MMEX сэкономили достаточно средств, то можете спонсировать некоторую сумму проекту MMEX."
-        ,"Tips:":"Заметки:"
+        , "Tips:": "Заметки:"
+        , "Note:": "Примечания"
+        , "wiki pages": "вики страницы"
     }]
 };
