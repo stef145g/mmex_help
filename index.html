@@ -176,7 +176,7 @@
         attach a password to the database, and will require a password
         every time MMEX is opened.
     </p>
-    <p class="i18n" id="rec_2">When encrypting your database, Don't forget your password.</p>
+    <p class="i18n">When encrypting your database, Don't forget your password.</p>
     <p class="i18n" id="rec_3">
         As with any computer system, the data we produce is important to
         us, and therefore need to safeguard against system malfunction.
@@ -507,7 +507,7 @@
                 <p class="i18n">Edit the account details</p>
             </li>
             <li class="i18n">
-                <p class="i18n">Use the ;OK; button to save the account information.</p>
+                <p class="i18n">Use the <b>OK</b> button to save the account information.</p>
             </li>
         </ul>
         <hr>
@@ -552,7 +552,7 @@
             </li>
             <li class="i18n">
                 Advanced &ndash; For a transfer transaction, when the
-                amount in the ;From; Account is different to the ;To; Account,
+                amount in the <b>From</b> Account is different to the <b>To</b> Account,
                 the difference is recorded in the separate fields. This can for
                 currency rate changes.
             </li>
@@ -561,7 +561,7 @@
         <ul>
             <li class="i18n">
                 Unreconciled: When you enter a transaction, it initially is
-                in the state of ;Unreconciled;. Which means the transaction has
+                in the state of <b>Unreconciled</b>. Which means the transaction has
                 not been reconciled with your bank/credit card company's
                 balance.
             </li>
@@ -684,11 +684,9 @@
             Any of these actions will open the transaction dialog box
             containing the details of the selected transaction. Make the
             changes and click OK to save the changes.
-        </p><a href="#top">
-            Back to
-            Top
-        </a>
+        </p>
         <hr>
+
         <h3 class="i18n">Transaction Filtering in Accounts</h3>
         <p class="i18n">
             Transactions can be filtered by either fixed filters or, by
@@ -1058,8 +1056,9 @@
             installation.
         </p>
     <p class="i18n" id="web_import_2">
-        You can download all needed files <a href="https://sourceforge.net/projects/moneymanagerex-webapp/files/latest/download">
-            from project page
+        You can download all needed files from 
+        <a href="https://sourceforge.net/projects/moneymanagerex-webapp/files/latest/download">
+            project page
         </a>.
     </p>
     <p class="i18n" id="web_import_3">
@@ -1156,59 +1155,66 @@
     </p>
     <p class="i18n" id="csv_import_10">
         Important Note (2): After importing from QIF, all transactions will
-        have a ;Follow Flag; as it its status. You can mark all
+        have a <b>Follow Flag</b> as it its status. You can mark all
         transactions with this flag using the bulk status setting commands
         using the right click menu in the account view.
     </p>
     <hr>
 
     <h2 class="i18n">Importing From Universal CSV Format</h2>
-        <p class="i18n">
-            To alleviate the problem of users having to pre-format their
-            bank transaction CSV files into the fixed format MMEX requires,
-            MMEX also allows users to import CSV files where the order of
-            fields is completely freeform. To use this importer, select the
-            account you want to import into and then select the order of fields
-            in the CSV file by picking and choosing from the list of possible
-            fields. MMEX will now import the CSV file using the format
-            information specified by the user. MMEX can import from a wide
-            variety of formats. One of them is a fixed format CSV file. This
-            file format exactly matches the CSV format that MMEX can export. So
-            it can be useful to move data from one .mmb database file to
-            another .mmb database file. To easily see the format of the CSV
-            file, you can try exporting an account to a CSV file and then
-            analyzing the format created.<br>
-            <br>
-            The CSV field options are as follows:<br>
-            Date - Date of the transaction (In the format specified in
-            Options&rarr;DateFormat)<br>
+    <p class="i18n" id="import_ucsv_1">
+        To alleviate the problem of users having to pre-format their
+        bank transaction CSV files into the fixed format MMEX requires,
+        MMEX also allows users to import CSV files where the order of
+        fields is completely freeform. To use this importer, select the
+        account you want to import into and then select the order of fields
+        in the CSV file by picking and choosing from the list of possible
+        fields. MMEX will now import the CSV file using the format
+        information specified by the user. MMEX can import from a wide
+        variety of formats. One of them is a fixed format CSV file. This
+        file format exactly matches the CSV format that MMEX can export. So
+        it can be useful to move data from one .mmb database file to
+        another .mmb database file. To easily see the format of the CSV
+        file, you can try exporting an account to a CSV file and then
+        analyzing the format created.
+        </p>
+    <p>
+        <span class="i18n">The CSV field options are as follows:</span><br>
+        <span class="i18n">Date - Date of the transaction (In the format specified in Options&rarr;DateFormat)</span><br>
+        <span class="i18n">
             Payee - To whom the transaction was made. In the case of a transfer
             transaction, this indicates the name of the account from which the
-            transfer was made or to the account the transfer was made.<br>
+            transfer was made or to the account the transfer was made.</span><br>
+        <span class="i18n">
             Amount (+/-) - The transaction amount. If it is a positive value it
-            is a deposit, negative value is a withdrawal (there is an option to reverse this).<br>
-            Category - The category of the transaction<br>
-            SubCategory - The subcategory of the transaction<br>
-            Notes - Transaction Notes<br>
-            Number - Transaction Number<br>
+            is a deposit, negative value is a withdrawal (there is an option to reverse this).</span><br>
+        <span class="i18n">Category - The category of the transaction</span><br>
+        <span class="i18n">SubCategory - The subcategory of the transaction</span><br>
+        <span class="i18n">Notes - Transaction Notes</span><br>
+        <span class="i18n">Number - Transaction Number</span><br>
+        <span class="i18n">
             Withdrawal - An +ive amount that is considered as a withdrawal. (Do
-            not use if specifying Amount (+/-))<br>
+            not use if specifying Amount (+/-))</span><br>
+        <span class="i18n">
             Deposit - An +ive amount that is considered as a deposit. (Do not
-            use if specifying Amount (+/-))<br>
-            Don't Care - Ignore this field<br>
-            <br>
-            Note that the transactions from a CSV file can only be imported
-            into a single MMEX account.<br>
-            <br>
-            Important Note (1): The date format option has to match that of the
-            date format in the QIF file, otherwise, date parsing by MMEX will
-            fail and will result in transactions having incorrect dates.<br>
-            <br>
-            Important Note (2): After importing from QIF, all transactions will
-            have a ;Follow Flag; as it its status. You can mark all
-            transactions with this flag using the bulk status setting commands
-            using the right click menu in the account view.
+            use if specifying Amount (+/-))</span><br>
+        <span class="i18n">Don't Care - Ignore this field</span>
+    </p>
+    <p class="i18n" id="import_ucsv_11">
+        Note that the transactions from a CSV file can only be imported
+        into a single MMEX account.
+    </p>
+    <p class="i18n" id="import_ucsv_12">
+        Important Note (1): The date format option has to match that of the
+        date format in the QIF file, otherwise, date parsing by MMEX will
+        fail and will result in transactions having incorrect dates.<br>
         </p>
+    <p class="i18n" id="import_ucsv_13">
+        Important Note (2): After importing from QIF, all transactions will
+        have a <b>Follow Flag</b> as it its status. You can mark all
+        transactions with this flag using the bulk status setting commands
+        using the right click menu in the account view.
+    </p>
 
         <!-- creating csv tips added by terry wick 9/14/2007 -->
     <div>        
@@ -1224,8 +1230,8 @@
             <tr class="success">
                 <td class="i18n" id="csv_import_51">
                     Or you can change the delimiter to be used by MMEX by
-                    choosing Tools&rarr;Options and changing the ;Import/Export
-                    Settings; in the ;General; option settings.
+                    choosing Tools&rarr;Options and changing the <b>Import/Export
+                    Settings</b> in the <b>General</b> option settings.
                 </td>
             </tr>
             <tr class="success">
@@ -1270,21 +1276,27 @@
             useful to move data from one .mmb database file to another .mmb
             database file. To easily see the format of the CSV file, you can
             try exporting an account to a CSV file and then analyzing the
-            format created.<br>
+            format created.
         </p>
-        <p class="i18n" id="csv_export_2">
-            The general format is as follows:<br>
-            Date - Date of the transaction (Displayed in the format specified
-            in Options&rarr;DateFormat)<br>
-            Payee - To whom the transaction was made. In the case of a transfer
-            transaction, this indicates the name of the account from which the
-            transfer was made or to the account the transfer was made.<br>
-            Transaction Type - This can either be ;Withdrawal; or ;Deposit;<br>
-            Amount - The transaction amount as a positive value<br>
-            Category - The category of the transaction<br>
-            SubCategory - The subcategory of the transaction if any (otherwise
-            blank)<br>
-            Notes - Transaction Notes<br>
+        <p>
+            <span class="i18n">The general format is as follows:</span><br>
+            <span class="i18n" id="csv_export_2">
+                Date - Date of the transaction (Displayed in the format specified
+                in Options&rarr;DateFormat)</span><br>
+            <span class="i18n" id="csv_export_3">
+                Payee - To whom the transaction was made. In the case of a transfer
+                transaction, this indicates the name of the account from which the
+                transfer was made or to the account the transfer was made.</span><br>
+            <span class="i18n" id="csv_export_4">
+                Transaction Type - This can either be <b>Withdrawal</b> or <b>Deposit</b></span><br>
+            <span class="i18n" id="csv_export_5">
+                Amount - The transaction amount as a positive value</span><br>
+            <span class="i18n" id="csv_export_6">
+                Category - The category of the transaction</span><br>
+            <span class="i18n" id="csv_export_7">
+                SubCategory - The subcategory of the transaction if any (otherwise
+                blank)</span><br>
+            <span class="i18n" id="csv_export_8">Notes - Transaction Notes</span><br>
         </p>
         <p class="i18n" id="csv_export_3">
             Note that the transactions from an account can be exported to a
@@ -1349,7 +1361,7 @@
                     except for Repeats: In x Days/Months.
                 </p>
             </li>
-            <li class="i18n">Select the Repeats as ;daily;, ;weekly; etc.</li>
+            <li class="i18n">Select the Repeats as <b>daily</b>, <b>weekly</b> etc.</li>
             <li>
                 <span class="i18n" id="recurring_8">Times Repeated:</span><br>
                 <span class="i18n" id="recurring_9">
@@ -1424,65 +1436,47 @@
             worth.
         </p>
         <hr>
-        <h2 class="i18n">Transaction Report Filter</h2>
-        <p class="i18n">
-            MMEX allows you to search for transactions that meet certain
-            criteria. This can be done using the Transaction Filter, located
-            Account View or as a Transaction Report.
-        </p>
-        <p class="i18n">
-            For a Transaction Report, the resulting list of transactions can
-            be printed or saved as a HTML file.
-        </p>
-        <hr>
+
         <h2 class="i18n">Reports</h2>
         <p class="i18n" id="reports_1">
             MMEX allows a variety of reports.<br>
             All the reports can also be printed if required using the menu:
             File&rarr;Print...&rarr;Current View
         </p>
-        <p class="i18n">
-            Select the appropriate report under the Reports node in the
-            navigation tree. Some reports require some user input, some do not.
-            Once you view a report, you can print the report using the print
-            options in the menu.
-        </p>
+    <p class="i18n" id="reports_2">
+        Select the appropriate report under the Reports node in the
+        navigation tree. Some reports require some user input, some do not.
+        Once you view a report, you can print the report using the print
+        options in the menu.
+    </p>
         <p class="i18n">Financial Year Reports: (Required by various countries)</p>
-        <p class="i18n">
-            These reports generally do not start at the beginning of the
-            calendar year, and appear as branches of the main report titles.
-            These reports cover:
-        </p>
+    <p class="i18n" id="reports_3">
+        These reports generally do not start at the beginning of the
+        calendar year, and appear as branches of the main report titles.
+        These reports cover:
+    </p>
         <ol>
-            <li class="i18n">
-                <p class="i18n">Previous Financial Year.</p>
-            </li>
-            <li class="i18n">
-                <p class="i18n">Current Financial Year.</p>
-            </li>
+            <li class="i18n">Previous Financial Year.</li>
+            <li class="i18n">Current Financial Year.</li>
         </ol>
-        <p class="i18n">
-            By default the start date of a financial year is 1<sup>st</sup>
-            July of the year.
-        </p>
-        <p class="i18n">
-            The start date can be changed by the user to start on any day of
-            any month, within a 12 month period by using the menu
-            Tools&rarr;Options then selecting the General panel.
-        </p>
+    <p class="i18n" id="reports_4">
+        By default the start date of a financial year is 1<sup>st</sup>
+        July of the year.
+    </p>
+    <p class="i18n" id="reports_5">
+        The start date can be changed by the user to start on any day of
+        any month, within a 12 month period by using the menu
+        Tools&rarr;Options then selecting the General panel.
+    </p>
     <br>
-        <p class="i18n">
-            Transaction Reports:
-        </p>
+        <h3 class="i18n">Transaction Reports</h3>
         <ol>
-            <li>
-                <span class="i18n">
-                    This allows the user to generate specific reports based
-                    on selected user requirements.
-                </span>
+            <li class="i18n" id="reports_6">
+                This allows the user to generate specific reports based
+                on selected user requirements.
             </li>
-            <li>
-                <span class="i18n">Also known as the Transaction Report Filter.</span>
+            <li class="i18n">
+                Also known as the Transaction Report Filter.
             </li>
         </ol>
         <p class="i18n">
@@ -1490,7 +1484,7 @@
             transactions made within Bank or Term type accounts. This report
             can also be used to display specific details for a particular
             account.
-        </p><br>
+        </p>
         <p class="i18n">
             Transaction Report - transfer transactions may upset balance
             totals.
@@ -1507,7 +1501,12 @@
             reference point for transfers in known for this report, which will
             reflect in the report having correct balances displayed.
         </p>
-        <p class="i18n">Cash flow Reports</p>
+    <p class="i18n">
+        For a Transaction Report, the resulting list of transactions can
+        be printed or saved as a HTML file.
+    </p>
+
+        <h3 class="i18n">Cash flow Reports</h3>
         <p class="i18n">
             This report projects the amount of funds available, based on
             future commitments.
@@ -1548,16 +1547,13 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>General Panel</th>
+                    <th class="i18n">General Panel</th>
                     <th></th>
                 </tr>
             </thead>
             <tr>
                 <td>
-                    <p class="i18n">
-                        User Name<br>
-                        Optional
-                    </p>
+                    <p class="i18n">User Name</p>
                 </td>
                 <td>
                     <p class="i18n">
@@ -1569,9 +1565,7 @@
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p class="i18n">Language</p>
-                </td>
+                <td class="i18n">Language</td>
                 <td>
                     <p class="i18n">
                         This is the language used by the MMEX GUI. MMEX
@@ -1581,9 +1575,7 @@
                 </td>
             </tr>
             <tr>
-                <td>
-                    <p class="i18n">Base Currency:</p>
-                </td>
+                <td class="i18n">Base Currency</td>
                 <td>
                     <p class="i18n">
                         The base currency setting is used to set the
@@ -1594,23 +1586,23 @@
                 </td>
             </tr>
             <tr>
-                <td>Date Format:</td>
-                <td>
+                <td class="i18n">Date Format</td>
+                <td class="i18n">
                     The date format setting is used to control how dates
                     should be displayed and also how dates should be parsed
                     when importing QIF, CSV files.
                 </td>
             </tr>
             <tr>
-                <td>Financial Year</td>
-                <td>
+                <td class="i18n">Financial Year</td>
+                <td class="i18n">
                     Sets the start Day and Month for a Financial Year
                     period, as opposed to a calendar year. This is used in
                     Budgets and Reports.
                 </td>
             </tr>
             <tr>
-                <td>Database Backup</td>
+                <td class="i18n">Database Backup</td>
                 <td>
                     <p class="i18n">
                         Sets the way the backups are performed when MMEX
@@ -1643,49 +1635,47 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>View Options Panel</th>
+                    <th class="i18n">View Options Panel</th>
                     <th></th>
                 </tr>
             </thead>
             <tr>
-                <td>
-                    <p class="i18n">Account View</p>
-                </td>
-                <td>
+                <td class="i18n">Account View</td>
+                <td class="i18n">
                     This sets the Navigation tree's visible accounts,
                     according to status.
                 </td>
             </tr>
             <tr>
-                <td>Transaction View</td>
-                <td>
+                <td class="i18n">Transaction View</td>
+                <td class="i18n">
                     This determines which transactions are seen as default
                     in the Account View.
                 </td>
             </tr>
             <tr>
-                <td>Font Size</td>
-                <td>
+                <td class="i18n">Font Size</td>
+                <td class="i18n">
                     This will set the font being used on the Home Page and
                     in Reports.
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="i18n">
                     Tree View<br>
                     Expand Section
                 </td>
-                <td>
+                <td class="i18n">
                     Sets the account types being expanded when in the
                     navigation tree is refreshed.
                 </td>
             </tr>
             <tr>
-                <td>
+                <td class="i18n">
                     Home Page<br>
                     Expand Section
                 </td>
-                <td>
+                <td class="i18n">
                     Sets the account types being expanded when the home
                     page is refreshed.
                 </td>
@@ -1699,13 +1689,13 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>Colors Panel</th>
+                    <th class="i18n">Colors Panel</th>
                     <th></th>
                 </tr>
             </thead>
             <tr>
                 <td></td>
-                <td>
+                <td class="i18n">
                     Allows the user to modify colors in MMEX to suit
                     his/her style.
                 </td>
@@ -1715,13 +1705,13 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>Import/Export Panel</th>
+                    <th class="i18n">Import/Export Panel</th>
                     <th></th>
                 </tr>
             </thead>
             <tr>
-                <td>CSV Limiter</td>
-                <td>
+                <td class="i18n">CSV Delimiter</td>
+                <td class="i18n">
                     This is used as the delimiting character when parsing
                     CSV files. This is useful to modify from the default ','
                     when dealing with currencies that use ',' to denote decimal
@@ -1729,8 +1719,8 @@
                 </td>
             </tr>
             <tr>
-                <td>WebApp settings</td>
-                <td>
+                <td class="i18n">WebApp settings</td>
+                <td class="i18n">
                     Set URL and GUID of your WebApp installation to allow
                     data sync. Parameters can be found in WebApp 'Guide'
                     page.
@@ -1740,20 +1730,20 @@
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>Others Panel</th>
+                    <th class="i18n">Others Panel</th>
                     <th></th>
                 </tr>
             </thead>
             <tr>
-                <td>New Transactions</td>
-                <td>
+                <td class="i18n">New Transactions</td>
+                <td class="i18n">
                     Changes the default settings for the New/Edit
                     Transactions Dialog
                 </td>
             </tr>
             <tr>
-                <td>Stock Quote Web Page</td>
-                <td>
+                <td class="i18n">Stock Quote Web Page</td>
+                <td class="i18n">
                     This URL is used by the Refresh button on the Stock
                     Investments page. This URL is also used by the New/Edit
                     Stock dialog, to display the web page for the listed stock.
@@ -1762,22 +1752,22 @@
                 </td>
             </tr>
             <tr>
-                <td>Use Original date...</td>
-                <td>
+                <td class="i18n">Use Original date...</td>
+                <td class="i18n">
                     Activate to use the date of the transaction date when
                     using paste transaction, in account view.
                 </td>
             </tr>
             <tr>
-                <td>Use sound...</td>
-                <td>
+                <td class="i18n">Use sound...</td>
+                <td class="i18n">
                     Activate to plays a sound when a transaction is
                     entered.
                 </td>
             </tr>
             <tr>
-                <td>Enable online currency...</td>
-                <td>
+                <td class="i18n">Enable online currency...</td>
+                <td class="i18n">
                     Activate to allow currencies to be updated via the
                     internet.
                 </td>
@@ -1834,12 +1824,12 @@
         <h3 class="i18n">Is the .mmb format proprietary? And, Is my data safe?</h3>
         <table>
             <tr>
-                <td>No</td>
-                <td>.mmb file is not proprietary.</td>
+                <td class="i18n">No</td>
+                <td class="i18n">.mmb file is not proprietary.</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>
+                <td class="i18n">
                     MMEX uses SQLite databases to store user data. That
                     means that the .mmb file is a regular SQLite database.
                     SQLite is one of the smallest, free relational database
@@ -1851,12 +1841,12 @@
                 </td>
             </tr>
             <tr>
-                <td>Yes</td>
-                <td>Your data is completely safe.</td>
+                <td class="i18n">Yes</td>
+                <td class="i18n">Your data is completely safe.</td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td>
+                <td class="i18n">
                     The data is self contained on your PC, (or USB stick if
                     you have made it portable). To further protect your data,
                     encryption can now be added. This applies a password to
@@ -1877,22 +1867,24 @@
         </p>
         <p class="i18n">To make MMEX portable:</p>
         <ol>
-            <li class="i18n">
-                On Windows (assume F:\ is USB flash drive)<br>
-                Copy ;C:\Program Files\MoneyManagerEx; to F:\<br>
-                Copy ;%APPDATA%\MoneyManagerEx\mmexini.db3; to
-                F:\MoneyManagerEx<br>
-                Copy your database file to any folder on F:\<br>
+            <li>
+                <span class="i18n">Windows (assume F:\ is USB flash drive)</span><br>
+                <span class="i18n">Copy</span> <i>C:\Program Files\MoneyManagerEx</i> to F:\<br>
+                <span class="i18n">Copy</span> <i>%APPDATA%\MoneyManagerEx\mmexini.db3</i>
+                <span class="i18n">to </span>F:\MoneyManagerEx<br>
+                <span class="i18n">Copy your database file to any folder on F:\</span><br>
                 <br>
                 <br>
             </li>
-            <li class="i18n">
-                On Unix (assume /media/disk is mounted USB flash drive)<br>
-                Compile mmex from sources as usually,<br>
-                and make install prefix=/media/disk<br>
+            <li>
+                <span class="i18n">On Unix (assume /media/disk is mounted USB flash drive)</span><br>
+                <span class="i18n">
+                    Compile mmex from sources as usually,<br>
+                    and make install prefix=/media/disk
+                </span><br>
                 cp ~/.mmex/mmexini.db3 /media/disk/mmex/share/mmex<br>
                 <br>
-                or if you want to copy mmex which has already installed in
+                <span class="i18n"> you want to copy mmex which has already installed in</span>
                 /usr<br>
                 cp /usr/bin/mmex /media/disk/mmex/bin<br>
                 cp /usr/share/mmex /media/disk/mmex/share<br>
