@@ -1849,20 +1849,20 @@
         </form>
         <hr>
         <h3 class="i18n">What's the reason for the EX in the name of the software?</h3>
-        <p class="i18n">
-            Originally I developed a personal finance software called Money
-            Manager. It was written in .NET and more of a learning exercise
-            than serious software development. It grew far beyond the original
-            design. The software was frozen and work began on a new version
-            which had a similar user interface and features, but written in
-            C++.&nbsp;
-        </p>
-        <p class="i18n">
-            Usually Microsoft names their second version of their improved
-            software APIs with an Ex extension as in doSomething() and
-            doSomethingEx(). So I just followed the model and tacked on a 'Ex'
-            to the end.
-        </p>
+    <p class="i18n" id="faq_3">
+        Originally I developed a personal finance software called Money
+        Manager. It was written in .NET and more of a learning exercise
+        than serious software development. It grew far beyond the original
+        design. The software was frozen and work began on a new version
+        which had a similar user interface and features, but written in
+        C++.&nbsp;
+    </p>
+    <p class="i18n" id="faq_4">
+        Usually Microsoft names their second version of their improved
+        software APIs with an Ex extension as in doSomething() and
+        doSomethingEx(). So I just followed the model and tacked on a 'Ex'
+        to the end.
+    </p>
         <hr>
         <h3 class="i18n">Is the .mmb format proprietary? And, Is my data safe?</h3>
         <table>
@@ -1872,7 +1872,7 @@
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td class="i18n">
+                <td class="i18n" id="faq_5">
                     MMEX uses SQLite databases to store user data. That
                     means that the .mmb file is a regular SQLite database.
                     SQLite is one of the smallest, free relational database
@@ -1889,7 +1889,7 @@
             </tr>
             <tr>
                 <td>&nbsp;</td>
-                <td class="i18n">
+                <td class="i18n" id="faq_6">
                     The data is self contained on your PC, (or USB stick if
                     you have made it portable). To further protect your data,
                     encryption can now be added. This applies a password to
@@ -1901,13 +1901,13 @@
         <hr>
         <h3 class="i18n">Can MMEX run from a USB Key?</h3>
         <p class="i18n">Yes.</p>
-        <p class="i18n">
-            MMEX is a portable application which means ability to run
-            without installation, for example, from USB flash drive. If MMEX
-            finds mmexini.db3 in its folder, it assumes portable mode. Copy
-            mmex's files to USB Key and copy yours mmexini.db3 to mmex's folder
-            on that drive.
-        </p>
+    <p class="i18n" id="faq_7">
+        MMEX is a portable application which means ability to run
+        without installation, for example, from USB flash drive. If MMEX
+        finds mmexini.db3 in its folder, it assumes portable mode. Copy
+        mmex's files to USB Key and copy yours mmexini.db3 to mmex's folder
+        on that drive.
+    </p>
         <p class="i18n">To make MMEX portable:</p>
         <ol>
             <li>
@@ -1921,14 +1921,13 @@
             </li>
             <li>
                 <span class="i18n">On Unix (assume /media/disk is mounted USB flash drive)</span><br>
-                <span class="i18n">
-                    Compile mmex from sources as usually,<br>
-                    and make install prefix=/media/disk
+                <span class="i18n" id="faq_8">
+                    Compile mmex from sources as usually, and make install prefix=/media/disk
                 </span><br>
                 cp ~/.mmex/mmexini.db3 /media/disk/mmex/share/mmex<br>
                 <br>
-                <span class="i18n"> you want to copy mmex which has already installed in</span>
-                /usr<br>
+                <span class="i18n">You want to copy mmex which has already installed in /usr</span>
+                <br>
                 cp /usr/bin/mmex /media/disk/mmex/bin<br>
                 cp /usr/share/mmex /media/disk/mmex/share<br>
                 cp /usr/share/doc/mmex /media/disk/mmex/share/doc<br>
@@ -1937,20 +1936,25 @@
         </ol>
         <hr>
         <h3 class="i18n">How do I know MMEX is not trying to steal my sensitive financial information?</h3>
-        <p class="i18n">
+    <p>
+        <span class="i18n" id="faq_9">
             Generally, with any closed source program, you have to depend
             upon the vendor's word regarding safety of the data. But with MMEX
-            being open source, you can verify this claim yourself.<br>
+            being open source, you can verify this claim yourself.</span><br>
+        <span class="i18n" id="faq_10">
             Even if you are not a C++ expert, you can rest assured that anyone
             can access the source code at any time and verify the legitimacy of
-            MMEX's intentions.<br>
+            MMEX's intentions.
+        </span><br>
+        <span class="i18n" id="faq_11">
             MMEX does connect to the internet only to send anonymous usage
-            statistics or when checking for an update.<br>
-            You can disable this in Options-&gt;Network<br>
-            <br><br>
-            Here is a sample of data that MMEX will send:<br>
-            <br>
-        </p>
+            statistics or when checking for an update.
+        </span><br>
+        <span class="i18n" id="faq_12">You can disable this in Options-&gt;Network</span><br>
+                <br><br>
+        <span class="i18n">Here is a sample of data that MMEX will send:</span><br>
+                <br>
+    </p>
         <table>
             <tr>
                 <th>Version</th>
@@ -1972,22 +1976,21 @@
             </tr>
         </table>
         <hr>
-        <h3 class="i18n">How do I print account statements using MMEX?</h3>
-        <p class="i18n">
-            To print a statement with transactions from any arbitrary set of
-            criteria, use the Transaction Filter to select the transactions you
-            want and then do a print from the menu.
-            File&rarr;Print...&rarr;Current View
-        </p>
-        <p class="i18n">
-            The Transaction Filter is accessed from Reports&rarr;Transaction
-            Reports on the Navigation Tree, or<br>
-            from the Quick Navigation buttons in the top left hand corner of
-            MMEX.
-        </p>
+    <h3 class="i18n">How do I print account statements using MMEX?</h3>
+    <p class="i18n" id="faq_13">
+        To print a statement with transactions from any arbitrary set of
+        criteria, use the Transaction Filter to select the transactions you
+        want and then do a print from the menu.
+        File&rarr;Print...&rarr;Current View
+    </p>
+    <p class="i18n" id="faq_14">
+        The Transaction Filter is accessed from Reports&rarr;Transaction
+        Reports on the Navigation Tree, or from the Quick Navigation 
+        buttons in the top left hand corner of MMEX.
+    </p>
 
-
-        <hr>
-        &#9400; 2005-2009 Madhan Kanagavel
+<hr>
+&#9400; 2005-2009 Madhan Kanagavel<br>
+<span class="i18n" id="translator"></span>
 </body>
 </html>
