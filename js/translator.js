@@ -6,7 +6,7 @@
 	if (Object.keys(localization).indexOf(lang) > -1)
 	{
 	    console.log(lang)
-
+	    var success = 0;
 	    var elements = document.getElementsByClassName('i18n');
 	    for (var i = 0; i < elements.length; i++) {
 	        var element = elements[i];
@@ -16,9 +16,14 @@
 	        var translation_str = localization[lang][0][element_str];
 	        if (translation_str != "" & translation_str !== undefined) {
 	            element.innerHTML = translation_str;
+	            success = success + 1;
 	        }
 	        else
 	            element.style.color = "#aa0000";
+	    }
+	    if (i != success) {
+	        var perc = document.getElementById("percantage");
+	        perc.innerHTML = "Translated " + success + " of " + i;
 	    }
 	}
 
