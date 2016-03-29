@@ -9,14 +9,56 @@
     <script src="js/translations.js"></script>
     <script src="js/toc.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
-    <style>div#toc ul {
+    <!--Smooth Back to Top Button Start-->
+    <script>
+        jQuery(document).ready(function () {
+            var offset = 220;
+            var duration = 500;
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('.back-to-top').fadeIn(duration);
+                } else {
+                    jQuery('.back-to-top').fadeOut(duration);
+                }
+            });
+            jQuery('.back-to-top').click(function (event) {
+                event.preventDefault();
+                jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                return false;
+            })
+        });
+    </script>
+    <style>
+        div#page {
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 2em;
+            right: 0px;
+            text-decoration: none;
+            color: #000000;
+            font-size: 12px;
+            padding: 1em;
+            display: none;
+        }
+
+            .back-to-top:hover {
+                text-decoration: none;
+            }
+
+    div#toc ul {
         list-style-type: none;
     }
     </style>
 </head>
 
 <body dir="ltr" lang="en-US" onload="translate();generateTOC(document.getElementById('toc'));">
-    <!--a href="#" class="back-to-top"><img src="backtotop.png" alt="Back to Top" /></a-->
+    <a href="#" class="back-to-top"><img src="img/backtotop.png" alt="Back to Top" /></a>
     <!--Smooth Back to Top Button End-->
 
     <table class="table, small">
@@ -786,36 +828,44 @@
             You can manage Currencies by using the menu item:
             Tools&rarr;Organize Currency.
         </p>
-        <p class="i18n" id="curr_5">To Add a new Currency:</p>
+        <p class="i18n">To Add a new Currency:</p>
         <ul>
-            <li class="i18n" id="curr_51">Use the Add button in the Currency Dialog</li>
-            <li class="i18n" id="curr_52">
-                Provide a suitable name for your new currency.<br>
-                Note: This name is not changeable, but the currency can be
-                deleted if not being used.
+            <li class="i18n">Use the Add button in the Currency Dialog</li>
+            <li>
+                <span class="i18n">Provide a suitable name for your new currency.</span><br>
+                <span class="i18n" id="curr_52">
+                    Note: This name is not changeable, but the currency can be
+                    deleted if not being used.
+                </span>
             </li>
-            <li class="i18n" id="curr_53">
-                Adjust the currency values in the Currency Manager.<br>
-                The Currency Manager is also available when editing a
-                currency.
+            <li>
+                <span class="i18n" id="curr_53">Adjust the currency values in the currency manager.</span><br>
+                <span class="i18n" id="curr_54">
+                    The Currency Manager is also available when editing a
+                    currency.
+                </span>
             </li>
-            <li class="i18n" id="curr_54">
-                Use the Update button to save the changes before
-                closing.<br>
-                Note: All changes will be lost if the Update button is not used
-                before Closing.
-            </li>
+            <li>
+                <span class="i18n" id="curr_55">
+                    Use the Update button to save the changes before
+                    closing.
+                </span><br>
+                <span class="i18n" id="curr_56">
+                    Note: All changes will be lost if the Update button is not used
+                    before Closing.
+                </span>
+        </li>
         </ul>
-        <p class="i18n" id="curr_6">
+        <p class="i18n" id="curr_57">
             When more than one currency is being used, the Conversion to
             Base Rate needs to be set. This will allow the value of the
             currency to properly reflect the value at the base rate.
         </p>
-        <p class="i18n" id="curr_7">
+        <p class="i18n" id="curr_58">
             To allow Automatic Currency updates, the Currency Symbol needs
             to be set for the particular currency being used.
         </p>
-        <p class="i18n" id="curr_8">
+        <p class="i18n" id="curr_59">
             To use the menu item: Tools&rarr;Online Update Currency Rate,
             the following must occur:
         </p>
@@ -832,73 +882,76 @@
             <span class="label label-info">Tips:</span>
             <table class="table">
                 <tr class="success">
-                    <td>
+                    <td class="i18n">
                         Use the toolbar icon for quick selection of the
                         Organize Currencies dialog.
                     </td>
                 </tr>
                 <tr class="success">
-                    <td>
-                        Use the up/down keys to navigate the currency
-                        selection.
+                    <td class="i18n">
+                        Use the up/down keys to navigate the currency selection.
                     </td>
                 </tr>
             </table>
         </div>
         <hr>
         <h2 class="i18n">Working with Categories</h2>
-        <p class="i18n">
+        <p class="i18n" id="cat_1">
             Categories indicate the reason an expenditure is made or an
             income is received.
         </p>
-        <p class="i18n">
-            A Category is generally used to record Income or Expenses.
-            Because MMEX allows us to transfer money between accounts, it is
-            also recommended to use categories to record transfers. This will
-            allow us to determine what money is being transferred for a
-            specific reason, such as a repayment to a loan. This will not be
-            seen as an income or expense in the overall picture. Using the same
-            category for an income and an expense will upset balance
-            figures.
-        </p>
-        <p class="i18n">
-            Example: If we want to record the the value of running a car, we
-            would set up the following:<br>
-            Category: Car,<br>
-            Subcategory: Fuel, Maintenance, Registration, Insurance, Fuel Reimbursed<br>
-            The first 4 subcategories are used to record expenses. If we are
-            reimbursed for fuel costs for any reason, we would need to use Fuel
-            Reimbursed as an Income subcategory. This would then allow us to
-            determine the correct amount we are spending on fuel to run the
-            car. This will become clearer when we are using Budgets.
-        </p>
+    <p class="i18n" id="cat_2">
+        A Category is generally used to record Income or Expenses.
+        Because MMEX allows us to transfer money between accounts, it is
+        also recommended to use categories to record transfers. This will
+        allow us to determine what money is being transferred for a
+        specific reason, such as a repayment to a loan. This will not be
+        seen as an income or expense in the overall picture. Using the same
+        category for an income and an expense will upset balance
+        figures.
+    </p>
+    <p class="i18n" id="cat_3">
+        Example: If we want to record the the value of running a car, we
+        would set up the following:<br>
+        Category: Car,<br>
+        Subcategory: Fuel, Maintenance, Registration, Insurance, Fuel Reimbursed<br>
+        The first 4 subcategories are used to record expenses. If we are
+        reimbursed for fuel costs for any reason, we would need to use Fuel
+        Reimbursed as an Income subcategory. This would then allow us to
+        determine the correct amount we are spending on fuel to run the
+        car. This will become clearer when we are using Budgets.
+    </p>
         <hr>
         <h3 class="i18n">Split Categories</h3>
-        <p class="i18n">
-            When adding a new transaction, we can use more that one category
-            to record a transaction. This is known as a split category.
-        </p>
-        <p class="i18n">
-            The overall split category transaction is either a withdrawal or
-            a deposit. Although the categories within the split, need to
-            reflect the overall transaction type, each category can be
-            classified as a withdrawal or deposit within the split.
-        </p>
-        <p class="i18n">
-            Split categories can easily be viewed for a transaction by using
-            a pop-up menu selection when a split category entry exists.
-        </p>
-        <p class="i18n">
-            Note:<br>
-            Withdrawal Screen: Deposits are displayed as negative.<br>
-            Deposit Screen: Withdrawals are displayed as negative.
-        </p>
+    <p class="i18n" id="cat_4">
+        When adding a new transaction, we can use more that one category
+        to record a transaction. This is known as a split category.
+    </p>
+    <p class="i18n" id="cat_5">
+        The overall split category transaction is either a withdrawal or
+        a deposit. Although the categories within the split, need to
+        reflect the overall transaction type, each category can be
+        classified as a withdrawal or deposit within the split.
+    </p>
+    <p class="i18n" id="cat_6">
+        Split categories can easily be viewed for a transaction by using
+        a pop-up menu selection when a split category entry exists.
+    </p>
+    <p>
+        <span class="i18n" id="cat_7">Note</span><br>
+        <span class="i18n" id="cat_8">Withdrawal Screen: Deposits are displayed as negative.</span><br>
+        <span class="i18n" id="cat_9">Deposit Screen: Withdrawals are displayed as negative.</span>
+    </p>
         <p class="i18n">Managing Our Categories</p>
         <p class="i18n">
-            You can manage Categories by using the menu item:
-            Tools&rarr;Organize Categories.<br>
-            Once the category dialog opens, you can add new categories and
-            subcategories.
+            <span class="i18n" id="cat_10">
+                You can manage Categories by using the menu item:
+                Tools&rarr;Organize Categories.
+            </span><br>
+            <span class="i18n" id="cat_11">
+                Once the category dialog opens, you can add new categories and
+                subcategories.
+            </span>
         </p>
         <p class="i18n">To Add a new Category:</p>
         <ol>
@@ -906,10 +959,10 @@
             <li class="i18n">Type the new category name into the text box</li>
             <li class="i18n">Use the the Add button</li>
         </ol>
-        <p class="i18n">
-            The new category will appear at the bottom, and will be resorted
-            when the dialog box is re-opened.
-        </p>
+    <p class="i18n" id="cat_12">
+        The new category will appear at the bottom, and will be resorted
+        when the dialog box is re-opened.
+    </p>
         <p class="i18n">To Add a new Subcategory:</p>
         <ol>
             <li class="i18n">
@@ -919,56 +972,46 @@
             <li class="i18n">Type the new subcategory name into the text box</li>
             <li class="i18n">Press the Add button</li>
         </ol>
-        <p class="i18n">
-            You can also change the names by selecting the
-            category/subcategory in the list , modify the name in the text box,
-            then use the Edit button. Use a similar action to delete the
-            category/subcategory in the list.
-        </p>
-        <p class="i18n">
-            Note: You cannot delete categories which are being used by any
-            transactions.
-        </p>
-        <p class="i18n">
-            Ensure that no transactions use this category/subcategory,
-            combination. This can be done by:
-        </p>
+    <p class="i18n" id="cat_13">
+        You can also change the names by selecting the
+        category/subcategory in the list , modify the name in the text box,
+        then use the Edit button. Use a similar action to delete the
+        category/subcategory in the list.
+    </p>
+    <p class="i18n" id="cat_14">
+        Note: You cannot delete categories which are being used by any
+        transactions.
+    </p>
+    <p class="i18n" id="cat_15">
+        Ensure that no transactions use this category/subcategory,
+        combination. This can be done by:
+    </p>
         <ul>
-            <li class="i18n">
-                Editing the transaction and changing the
-                category/subcategory.
-            </li>
-            <li class="i18n">
-                Deleting the transaction using this
-                category/subcategory.
-            </li>
-            <li class="i18n">
+            <li class="i18n">Editing the transaction and changing the category/subcategory.</li>
+            <li class="i18n">Deleting the transaction using this category/subcategory.</li>
+            <li class="i18n" id="cat_16">
                 Using the menu item: Tools &rarr;Relocation of...
                 Categories, where you can move all categories of a particular
                 name to an alternate category/subcategory combination.
             </li>
         </ul>
-        <p class="i18n">
-            This would then make the category free so it can then be
-            deleted.
-        </p>
+        <p class="i18n">This would then make the category free so it can then be deleted.</p>
         <div>
-            <span class="label label-info">Tips:</span>
+            <span class="label label-info i18n">Tips:</span>
             <table class="table">
                 <tr class="success">
-                    <td>
+                    <td class="i18n" id="cat_17">
                         Use the toolbar icon for quick selection of the
                         Organize Categories dialog.
                     </td>
                 </tr>
                 <tr class="success">
-                    <td>
-                        Use the up/down keys to navigate the tree
-                        selection.
+                    <td class="i18n" id="cat_18">
+                        Use the up/down keys to navigate the tree selection.
                     </td>
                 </tr>
                 <tr class="success">
-                    <td>
+                    <td class="i18n" id="cat_19">
                         Don't use the same category for Income and Expense,
                         as this will cause incorrect balance calculations.
                     </td>
