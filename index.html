@@ -574,6 +574,7 @@
         This dialog box will appear for new transactions. Use this
         dialog to enter the following details:
     </p>
+    <a name="Date"></a>
     <ul>
         <li class="i18n" id="trx_dlg_2">
             Date - This is generally the date of the transaction.
@@ -647,6 +648,7 @@
             calculations.
         </li>
     </ul>
+    <a name="Payee"></a>
     <p class="i18n" id="trx_dlg_16">
         Payee: This is a person or an organization to whom the money
         goes or comes from.
@@ -658,6 +660,7 @@
             immediate use.
         </li>
     </ul>
+    <a name="Category"></a>
     <p class="i18n" id="trx_dlg_18">
         Category: Category selects the kind of expense/income for the
         transaction.
@@ -697,10 +700,12 @@
             </tr>
         </table>
     </div>
+    <a name="Number"></a>
     <p class="i18n" id="trx_dlg_24">
-        Transaction Number: is a field to enter any kind of number
-        associated with the transaction like check number.
+        Transaction number: This field to enter any kind of number
+           associated with the transaction like check number.
     </p>
+    <a name="Notes"></a>
     <p class="i18n" id="trx_dlg_25">
         Notes: This field can be used to record any special notes with
         regards to the transaction. The button under Notes can be used to
@@ -936,11 +941,19 @@
         Split categories can easily be viewed for a transaction by using
         a pop-up menu selection when a split category entry exists.
     </p>
-    <p>
-        <span class="i18n">Notes:</span><br>
-        <span class="i18n" id="cat_8">Withdrawal Screen: Deposits are displayed as negative.</span><br>
-        <span class="i18n" id="cat_9">Deposit Screen: Withdrawals are displayed as negative.</span>
-    </p>
+
+    <div>
+        <span class="label label-danger i18n">Notes:</span>
+        <table class="table">
+            <tr class="warning">
+                <td class="i18n" id="cat_8">Withdrawal Screen: Deposits are displayed as negative.</td>
+            </tr>
+            <tr class="warning">
+                <td class="i18n" id="cat_9">Deposit Screen: Withdrawals are displayed as negative.</td>
+            </tr>
+        </table>
+    </div>
+
     <p class="i18n">Managing Our Categories</p>
     <p class="i18n">
         <span class="i18n" id="cat_10">
@@ -1143,32 +1156,39 @@
     <hr>
 
     <h2 class="i18n">Importing From QIF Files</h2>
-    <p class="i18n" id="csv_import_1">
+    <p class="i18n" id="qif_import_1">
         Quicken Interchange Format (QIF) is an open specification for
         reading and writing financial data to media (i.e. files). A QIF
-        file typically has the following structure:<br>
+        file typically has the following structure:
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class=" col-xs-10 text-info">
+                !Type:type identifier string<br>
+                [single character line code]Literal String Data<br>
+                ...<br>
+                ^<br>
+                [single character line code]Literal String Data<br>
+                ...<br>
+                ^<br>
+            </div>
+        </div>
     </p>
-    <p>
-        !Type:type identifier string<br>
-        [single character line code]Literal String Data<br>
-        ...<br>
-        ^<br>
-        [single character line code]Literal String Data<br>
-        ...<br>
-        ^<br>
-        <br>
-    </p>
-    <p class="i18n" id="csv_import_4">
+    <p class="i18n" id="qif_import_2">
         Each record ends with a ^ (caret).<br>
-        See example QIF transaction
     </p>
     <p>
-        !Type:Bank Header<br>
-        D6/ 1/94 Date<br>
-        T-1,000.00 Amount<br>
-        N1005 number<br>
-        PBank Of Mortgage Payee<br>
-        ^ End of transaction<br>
+        <span class="i18n">See example QIF transaction:</span>
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class=" col-xs-10 text-info">
+                !Type:Bank Header<br>
+                D6/ 1/94 Date<br>
+                T-1,000.00 Amount<br>
+                N1005 number<br>
+                PBank Of Mortgage Payee<br>
+                ^ End of transaction
+            </div>
+        </div>
     </p>
     <p class="i18n" id="csv_import_6">
         QIF is older than Open Financial Exchange (OFX). The inability to
@@ -1184,11 +1204,14 @@
     <p class="i18n" id="csv_import_8">
         The types are the following: (You can find the type of QIF by
         opening in a text editor)
-    </p>
-    <p>
-        !Type:Bank Bank account transactions<br>
-        !Type:Cash Cash account transactions<br>
-        !Type:CCard Credit card account transactions
+        <div class="row">
+            <div class="col-xs-1"></div>
+            <div class=" col-xs-10 text-info">
+                !Type:Bank Bank account transactions<br>
+                !Type:Cash Cash account transactions<br>
+                !Type:CCard Credit card account transactions
+            </div>
+        </div>
     </p>
     <p class="i18n" id="csv_import_9">
         Important Note (1): The date format option has to match that of the
@@ -1222,40 +1245,40 @@
     </p>
     <p>
         <span class="i18n">The CSV field options are as follows:</span><br>
-        <span class="i18n">Date - Date of the transaction (In the format specified in Options&rarr;DateFormat)</span><br>
-        <span class="i18n">
-            Payee - To whom the transaction was made. In the case of a transfer
+        <span class="i18n" id="import_ucsv_3"><a href="#Date">Date</a> - Date of the transaction (In the format specified in Options&rarr;DateFormat)</span><br>
+        <span class="i18n" id="import_ucsv_5">
+            <a href="#Payee">Payee</a> - To whom the transaction was made. In the case of a transfer
             transaction, this indicates the name of the account from which the
             transfer was made or to the account the transfer was made.
         </span><br>
-        <span class="i18n">
+        <span class="i18n" id="import_ucsv_7">
             Amount (+/-) - The transaction amount. If it is a positive value it
             is a deposit, negative value is a withdrawal (there is an option to reverse this).
         </span><br>
-        <span class="i18n">Category - The category of the transaction</span><br>
-        <span class="i18n">SubCategory - The subcategory of the transaction</span><br>
-        <span class="i18n">Notes - Transaction Notes</span><br>
-        <span class="i18n">Number - Transaction Number</span><br>
-        <span class="i18n">
+        <span class="i18n" id="import_ucsv_9"><a href="#Category">Category</a> - The category of the transaction</span><br>
+        <span class="i18n" id="import_ucsv_11"><a href="#Category">SubCategory</a> - The subcategory of the transaction</span><br>
+        <span class="i18n" id="import_ucsv_13"><a href="#Notes">Notes</a> - Transaction Notes</span><br>
+        <span class="i18n" id="import_ucsv_15"><a href="#Number">Number</a> - Transaction number</span><br>
+        <span class="i18n" id="import_ucsv_17">
             Withdrawal - An +ive amount that is considered as a withdrawal. (Do
             not use if specifying Amount (+/-))
         </span><br>
-        <span class="i18n">
+        <span class="i18n" id="import_ucsv_19">
             Deposit - An +ive amount that is considered as a deposit. (Do not
             use if specifying Amount (+/-))
         </span><br>
         <span class="i18n">Don't Care - Ignore this field</span>
     </p>
-    <p class="i18n" id="import_ucsv_11">
+    <p class="i18n" id="import_ucsv_21">
         Note that the transactions from a CSV file can only be imported
         into a single MMEX account.
     </p>
-    <p class="i18n" id="import_ucsv_12">
+    <p class="i18n" id="import_ucsv_23">
         Important Note (1): The date format option has to match that of the
         date format in the QIF file, otherwise, date parsing by MMEX will
         fail and will result in transactions having incorrect dates.<br>
     </p>
-    <p class="i18n" id="import_ucsv_13">
+    <p class="i18n" id="import_ucsv_25">
         Important Note (2): After importing from QIF, all transactions will
         have a <b>Follow Flag</b> as it its status. You can mark all
         transactions with this flag using the bulk status setting commands
@@ -1350,9 +1373,9 @@
             SubCategory - The subcategory of the transaction if any (otherwise
             blank)
         </span><br>
-        <span class="i18n" id="csv_export_8">Notes - Transaction Notes</span><br>
+        <span class="i18n">Notes - Transaction Notes</span><br>
     </p>
-    <p class="i18n" id="csv_export_3">
+    <p class="i18n" id="csv_export_8">
         Note that the transactions from an account can be exported to a
         single CSV file.
     </p>
@@ -1950,28 +1973,31 @@
         <span class="i18n" id="faq_12">You can disable this in Options-&gt;Network</span><br>
         <br><br>
         <span class="i18n">Here is a sample of data that MMEX will send:</span><br>
-        <br>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Version</th>
+                    <th>Operating System</th>
+                    <th>Language</th>
+                    <th>Country</th>
+                    <th>Resolution</th>
+                    <th>Start Time</th>
+                    <th>End Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.3.0 Portable</td>
+                    <td>Windows 8 (build 9200), 64-bit edition</td>
+                    <td>english</td>
+                    <td>United States</td>
+                    <td>1366x768</td>
+                    <td>2014-05-01 09:00:00</td>
+                    <td>2014-05-01 09:01:30</td>
+                </tr>
+            </tbody>
+        </table>
     </p>
-    <table>
-        <tr>
-            <th>Version</th>
-            <th>Operating System</th>
-            <th>Language</th>
-            <th>Country</th>
-            <th>Resolution</th>
-            <th>Start Time</th>
-            <th>End Time</th>
-        </tr>
-        <tr>
-            <td>1.3.0 Portable</td>
-            <td>Windows 8 (build 9200), 64-bit edition</td>
-            <td>english</td>
-            <td>United States</td>
-            <td>1366x768</td>
-            <td>2014-05-01 09:00:00</td>
-            <td>2014-05-01 09:01:30</td>
-        </tr>
-    </table>
     <hr>
 
     <h3 class="i18n">How do I print account statements using MMEX?</h3>
