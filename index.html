@@ -412,46 +412,46 @@
     <p class="i18n" id="new_acc_19">
         We would set up the following accounts:
     </p>
-    <table rules="GROUPS">
-        <tbody>
+    <table rules="GROUPS" class="table-condensed">
+        <thead>
             <tr style="vertical-align: top;">
-                <td class="i18n">Account Type</td>
-                <td class="i18n">Account Name</td>
-                <td class="i18n">Initial Balance</td>
+                <th class="i18n">Account Type</th>
+                <th class="i18n">Account Name</th>
+                <th class="i18n">Initial Balance</th>
             </tr>
-        </tbody>
+        </thead>
         <tbody>
             <tr style="vertical-align: top;">
                 <td class="i18n">Check/Savings</td>
                 <td class="i18n">Savings</td>
-                <td>$1,250.00</td>
+                <td class="i18n">$1,250.00</td>
             </tr>
             <tr style="vertical-align: top;">
                 <td>&nbsp;</td>
-                <td>Check</td>
-                <td>$500.00</td>
+                <td class="i18n">Check</td>
+                <td class="i18n">$500.00</td>
             </tr>
             <tr style="vertical-align: top;">
                 <td>&nbsp;</td>
                 <td class="i18n">MasterCard</td>
-                <td style="color: red;">-$250.00</td>
+                <td class="i18n" style="color: red;">-$250.00</td>
             </tr>
             <tr style="vertical-align: top;">
                 <td>&nbsp;</td>
                 <td class="i18n">Visa Card</td>
-                <td style="color:red;">-$475.00</td>
+                <td class="i18n" style="color:red;">-$475.00</td>
             </tr>
         </tbody>
         <tbody>
             <tr style="vertical-align: top;">
                 <td class="i18n">Term</td>
                 <td class="i18n">Home Mortgage</td>
-                <td style="color:red;">-$230,965.00</td>
+                <td style="color:red;" class="i18n">-$230,965.00</td>
             </tr>
             <tr style="vertical-align: top;">
                 <td>&nbsp;</td>
                 <td class="i18n">Education Fund</td>
-                <td>$5,000.00</td>
+                <td class="i18n">$5,000.00</td>
             </tr>
         </tbody>
     </table>
@@ -480,46 +480,51 @@
             </tr>
         </table>
     </div>
-    <p class="i18n" id="new_acc_23">
-        This views can be temporarily changed to show or hide the
-        appropriate section:
+    <p>
+        <span class="i18n" id="new_acc_23">
+            This views can be temporarily changed to show or hide the
+            appropriate section:
+        </span>
+        <table>
+            <tr>
+                <td class="i18n">Navigation Tree:</td>
+                <td class="i18n" id="new_acc_24">
+                    Expand/Contract the Bank and Term Account branches
+                    using the +/- nodes on the navigation tree.
+                </td>
+            </tr>
+            <tr>
+                <td class="i18n">Home Page:</td>
+                <td class="i18n" id="new_acc_25">
+                    Using the menu: View &rarr;Bank Accounts and/or menu:
+                    View&rarr;Term Accounts
+                </td>
+            </tr>
+        </table>
     </p>
-    <table rules="ROWS">
-        <tr style="vertical-align: top;">
-            <td class="i18n">Navigation Tree:</td>
-            <td class="i18n">
-                Expand/Contract the Bank and Term Account branches
-                using the +/- nodes on the navigation tree.
-            </td>
-        </tr>
-        <tr style="vertical-align: top;">
-            <td class="i18n">Home Page:</td>
-            <td class="i18n">
-                Using the menu: View &rarr;Bank Accounts and/or menu:
-                View&rarr;Term Accounts
-            </td>
-        </tr>
-    </table>
-    <p class="i18n">Using a mouse Right-Click on:</p>
-    <ul>
-        <li class="i18n">
-            Bank Accounts in the Navigation tree, will allow all
-            accounts or only favorite accounts to be shown, temporarily
-            changing the permanent settings, as well as other useful
-            options.
-        </li>
-    </ul>
-    <ul>
-        <li class="i18n">
-            Any account name under Bank or Term accounts, to bring up
-            other useful options.
-        </li>
-    </ul>
-    <p class="i18n">
+    <p>
+        <span class="i18n">Using a mouse Right-Click on:</span>
+        <ul>
+            <li class="i18n" id="new_acc_26">
+                Bank Accounts in the Navigation tree, will allow all
+                accounts or only favorite accounts to be shown, temporarily
+                changing the permanent settings, as well as other useful
+                options.
+            </li>
+        </ul>
+        <ul>
+            <li class="i18n" id="new_acc_27">
+                Any account name under Bank or Term accounts, to bring up
+                other useful options.
+            </li>
+        </ul>
+    </p>
+    <p class="i18n" id="new_acc_28">
         To make the change permanent, change the options using the menu:
         Tools&rarr;Options&rarr;View Options
     </p>
     <hr>
+
     <h3 class="i18n">Editing Account Information</h3>
     <p class="i18n" id="acc_edit_1">
         Once you have created an account, you can edit any of the
@@ -625,7 +630,7 @@
             duplicate if it is recognized as such.
         </li>
     </ul>
-    <p class="i18n" id="trx_dlg_12">Transaction Types:</p>
+    <p class="i18n">Transaction Types:</p>
     <ul>
         <li class="i18n" id="trx_dlg_13">
             Withdrawal: is one where one makes a payment and is an
@@ -702,7 +707,7 @@
         select commonly used field notes.
     </p>
     <hr>
-    <h3 class="i18n" id="trx_dlg_26">Editing and Updating Transactions</h3>
+    <h3 class="i18n">Editing and Updating Transactions</h3>
     <p class="i18n" id="trx_dlg_27">
         Editing existing transactions can be achieved in a number of
         ways:
@@ -722,15 +727,15 @@
     </p>
     <hr>
 
-    <h3 class="i18n" id="trx_dlg_32">Transaction Filtering in Accounts</h3>
-    <p class="i18n" id="trx_dlg_33">
+    <h3 class="i18n" id="filter_1">Transaction Filtering in Accounts</h3>
+    <p class="i18n" id="filter_2">
         Transactions can be filtered by either fixed filters or, by
         using the Transaction Filter in the Account View. This will allow
         the user to limit the visible transactions to those defined by the
         appropriate filter. These filtered transactions can then be easily
         selected and individually modified.
     </p>
-    <p class="i18n" id="trx_dlg_34">
+    <p class="i18n" id="trx_del_1">
         These visible transactions can also be deleted in bulk if so
         desired.
     </p>
@@ -738,11 +743,12 @@
         <span class="label label-danger i18n">Notes:</span>
         <table class="table">
             <tr class="warning">
-                <td class ="i18n" id="trx_dlg_35">Caution is advised when deleting transactions.</tdclass>
+                <td class="i18n" id="trx_del_2">Caution is advised when deleting transactions.</td>
             </tr>
         </table>
     </div>
     <hr>
+
     <h3 class="i18n">Reconciling and Balancing Transactions</h3>
     <p class="i18n">Unreconciled Transactions:</p>
     <ul>
