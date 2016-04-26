@@ -512,8 +512,6 @@
                 changing the permanent settings, as well as other useful
                 options.
             </li>
-        </ul>
-        <ul>
             <li class="i18n" id="new_acc_27">
                 Any account name under Bank or Term accounts, to bring up
                 other useful options.
@@ -704,7 +702,7 @@
     <a name="Number"></a>
     <p class="i18n" id="trx_dlg_24">
         Transaction number: This field to enter any kind of number
-           associated with the transaction like check number.
+        associated with the transaction like check number.
     </p>
     <a name="Notes"></a>
     <p class="i18n" id="trx_dlg_25">
@@ -756,21 +754,25 @@
     <hr>
 
     <h3 class="i18n">Reconciling and Balancing Transactions</h3>
-    <p class="i18n">Unreconciled Transactions:</p>
-    <ul>
-        <li class="i18n" id="trx_bal_1">
-            This means that they have not been verified with the
-            statement from the financial institution.
-        </li>
-    </ul>
-    <p class="i18n">Reconciled Transactions:</p>
-    <ul>
-        <li class="i18n" id="trx_bal_2">
-            A transaction can be considered reconciled when the details
-            of the transaction match that from the financial
-            institution.
-        </li>
-    </ul>
+    <p>
+        <span class="i18n">Unreconciled Transactions:</span>
+        <ul>
+            <li class="i18n" id="trx_bal_1">
+                This means that they have not been verified with the
+                statement from the financial institution.
+            </li>
+        </ul>
+    </p>
+    <p>
+        <span class="i18n">Reconciled Transactions:</span>
+        <ul>
+            <li class="i18n" id="trx_bal_2">
+                A transaction can be considered reconciled when the details
+                of the transaction match that from the financial
+                institution.
+            </li>
+        </ul>
+    </p>
     <p class="i18n" id="trx_bal_3">
         In MMEX, reconciled and unreconciled transactions are shown by
         different icons. When bank details are not checked against a bank
@@ -781,7 +783,7 @@
         <span class="label label-info i18n">Tips:</span>
         <table class="table">
             <tr class="success">
-                <td class ="i18n" id="trx_bal_4">
+                <td class="i18n" id="trx_bal_4">
                     To mark a transaction as reconciled, just select
                     the transaction and hit the 'r' or 'R' key. To mark a
                     transaction as unreconciled, just select the
@@ -801,7 +803,7 @@
         <span class="label label-info i18n">Tips:</span>
         <table class="table">
             <tr class="success">
-                <td class ="i18n" id="trx_bal_7">
+                <td class="i18n" id="trx_bal_7">
                     To mark a transaction as requiring followup, just
                     select the transaction and hit the 'f or 'F' key.
                 </td>
@@ -1214,17 +1216,27 @@
             </div>
         </div>
     </p>
-    <p class="i18n" id="csv_import_9">
-        Important Note (1): The date format option has to match that of the
-        date format in the QIF file, otherwise, date parsing by MMEX will
-        fail and will result in transactions having incorrect dates.
-    </p>
-    <p class="i18n" id="csv_import_10">
-        Important Note (2): After importing from QIF, all transactions will
-        have a <b>Follow Flag</b> as it its status. You can mark all
-        transactions with this flag using the bulk status setting commands
-        using the right click menu in the account view.
-    </p>
+
+    <div>
+        <span class="label label-danger i18n">Notes:</span>
+        <table class="table">
+            <tr class="warning">
+                <td class="i18n" id="csv_import_9">
+                    The date format option has to match that of the
+                    date format in the QIF file, otherwise, date parsing by MMEX will
+                    fail and will result in transactions having incorrect dates.
+                </td>
+            </tr>
+            <tr class="warning">
+                <td class="i18n" id="csv_import_10">
+                    After importing from QIF, all transactions will
+                    have a <b>Follow Flag</b> as it its status. You can mark all
+                    transactions with this flag using the bulk status setting commands
+                    using the right click menu in the account view.
+                </td>
+            </tr>
+        </table>
+    </div>
     <hr>
 
     <h2 class="i18n">Importing From Universal CSV Format</h2>
@@ -1270,22 +1282,32 @@
         </span><br>
         <span class="i18n">Don't Care - Ignore this field</span>
     </p>
-    <p class="i18n" id="import_ucsv_21">
-        Note that the transactions from a CSV file can only be imported
-        into a single MMEX account.
-    </p>
-    <p class="i18n" id="import_ucsv_23">
-        Important Note (1): The date format option has to match that of the
-        date format in the QIF file, otherwise, date parsing by MMEX will
-        fail and will result in transactions having incorrect dates.<br>
-    </p>
-    <p class="i18n" id="import_ucsv_25">
-        Important Note (2): After importing from QIF, all transactions will
-        have a <b>Follow Flag</b> as it its status. You can mark all
-        transactions with this flag using the bulk status setting commands
-        using the right click menu in the account view.
-    </p>
 
+    <div>
+        <span class="label label-danger i18n">Notes:</span>
+        <table class="table">
+            <tr class="warning">
+                <td class="i18n" id="import_ucsv_21">
+                    The transactions from a CSV file can only be imported
+                    into a single MMEX account.
+                </td>
+            <tr class="warning">
+                <td class="i18n" id="import_ucsv_23">
+                    The date format option has to match that of the
+                    date format in the QIF file, otherwise, date parsing by MMEX will
+                    fail and will result in transactions having incorrect dates.
+                </td>
+            </tr>
+            <tr class="warning">
+                <td class="i18n" id="import_ucsv_25">
+                    After importing from QIF, all transactions will
+                    have a <b>Follow Flag</b> as it its status. You can mark all
+                    transactions with this flag using the bulk status setting commands
+                    using the right click menu in the account view.
+                </td>
+            </tr>
+        </table>
+    </div>
     <!-- creating csv tips added by terry wick 9/14/2007 -->
     <div>
         <span class="label label-info i18n">Tips:</span>
@@ -1572,10 +1594,10 @@
         totals.
     </p>
     <p class="i18n" id="reports_10">
-        Since a transfer transaction is a withdrawal from one account
-        and a deposit to another account, a transaction report done on
-        multiple accounts looses the reference point for determining
-        weather the transaction is a deposit or withdrawal.
+        Since a transfer transaction is a withdrawal from one account and
+        a deposit to another account, a transaction report done on multiple
+        accounts loses the reference point for determining whether
+        the transaction is a deposit or withdrawal.
     </p>
     <p class="i18n" id="reports_11">
         When a transaction report is used for a specific account, it
@@ -1723,7 +1745,8 @@
             </td>
         </tr>
     </table>
-    <br><br>
+    <br>
+    <br>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -1746,7 +1769,8 @@
             </td>
         </tr>
     </table>
-    <br><br>
+    <br>
+    <br>
     <table class="table table-striped">
         <thead>
             <tr>
@@ -1761,7 +1785,8 @@
                 his/her style.
             </td>
         </tr>
-    </table><br>
+    </table>
+    <br>
     <br>
     <table class="table table-striped">
         <thead>
@@ -2015,7 +2040,9 @@
     </p>
 
     <hr>
-    &#9400; 2005-2009 Madhan Kanagavel<br>
-    <span class="i18n" id="translator"></span> <span id="percantage"></span>
+    &#9400; 2005-2009 Madhan Kanagavel
+    <br>
+    <span class="i18n" id="translator"></span>
+    <span id="percantage"></span>
 </body>
 </html>
