@@ -1251,7 +1251,10 @@
     </p>
     <p>
         <span class="i18n">The CSV field options are as follows:</span><br>
-        <span class="i18n" id="import_ucsv_3"><a href="#Date">Date</a> - Date of the transaction (In the format specified in Options&rarr;DateFormat)</span><br>
+        <span class="i18n" id="import_ucsv_3"><a href="#Date">Date</a>
+            - Date of the transaction 
+            (In the format specified in Options&rarr;DateFormat)
+        </span><br>
         <span class="i18n" id="payee_ref">
             <a href="#Payee">Payee</a> - To whom the transaction was made.
         </span>
@@ -1532,7 +1535,13 @@
     <hr>
 
     <h2 class="i18n">Stocks and Shares</h2>
-    <a href="stocks_and_shares.html">Stock Portfolio or Managed Fund Accounts in MMEX</a>
+    <a id="stocks_href" href="stocks_and_shares.html">Stock Portfolio or Managed Fund Accounts in MMEX</a>
+    <script>
+        var lang = getParameterValue("lang");
+        if (lang !== '')
+            document.getElementById('stocks_href').href = "stocks_and_shares.html?lang=" + lang;
+    </script>
+
     <hr>
 
     <h2 class="i18n">Assets</h2>
@@ -1546,7 +1555,12 @@
     <hr>
 
     <h2 class="i18n">Budgeting</h2>
-    <a href="budget.html">Budgeting in MMEX</a>
+    <a id="budget_href" href="budget.html">Budgeting in MMEX</a>
+    <script>
+        var lang = getParameterValue("lang");
+        if (lang !== '')
+            document.getElementById('budget_href').href = "budget.html?lang=" + lang;
+    </script>
     <hr>
 
     <h2 class="i18n">Reports</h2>
