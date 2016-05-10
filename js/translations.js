@@ -278,6 +278,21 @@
         , "payee_10": "Используйте клавиши вверх/вниз для перемещения по списку получателей."
         , "payee_11": "Используйте % в качестве шаблона, чтобы соответствовать множеству символов в фильтре."
         , "payee_12": "Используйте _, чтобы соответствовать любому символу в фильтре."
+        //Stocks and Shares
+        , "Stocks and Shares": "Инвестиции"
+        , "Stock Portfolio or Managed Fund Accounts in MMEX": "Управление активами в MMEX"
+        , "Managed Fund Account": "Управление фондами"
+        , "Stock Portfolio Account": "Портфели ценных бумаг"
+        , "Share Accounts in MMEX": "Долевое инвестирование в MMEX"
+        , "Share Accounts": "Долевые счета"
+        , "Adding Shares to our Share Accounts": "Добавление акций для долевых счетов"
+        , "Adding Dividends to our Shares": "Добавление дивидендов"
+        //Budgeting
+        , "Budgeting": "Бюджет"
+        , "budget_href": "Бюджет в MMEX"
+        , "Creating New Budgets": "Создание нового бюджета"
+        , "Editing of Budget Categories": "Редактирование категорий бюджета"
+        , "Budget Setup": "Настройка бюджета"
         //Options
         , "options_1": "Вы можете изменить значения различных параметров в диалоговом окне 'Параметры'."
         , "options_2": "Доступ через меню 'Инструменты&rarr;Опции'."
@@ -381,5 +396,6 @@
         , "Recommendations:": "Рекомендации"
         , "wiki pages": "вики страницы"
         , "translator": "Перевод: Николай Акимов"
+        , "go_home": "Домой"
     }]
 };
