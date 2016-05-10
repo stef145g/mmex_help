@@ -9,52 +9,8 @@
     <script src="js/translations.js"></script>
     <script src="js/toc.js"></script>
     <script src='http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js'></script>
-    <!--Smooth Back to Top Button Start-->
-    <script>
-        jQuery(document).ready(function () {
-            var offset = 220;
-            var duration = 500;
-            jQuery(window).scroll(function () {
-                if (jQuery(this).scrollTop() > offset) {
-                    jQuery('.back-to-top').fadeIn(duration);
-                } else {
-                    jQuery('.back-to-top').fadeOut(duration);
-                }
-            });
-            jQuery('.back-to-top').click(function (event) {
-                event.preventDefault();
-                jQuery('html, body').animate({ scrollTop: 0 }, duration);
-                return false;
-            })
-        });
-    </script>
-    <style>
-        div#page {
-            max-width: 900px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 20px;
-        }
-
-        .back-to-top {
-            position: fixed;
-            bottom: 2em;
-            right: 0px;
-            text-decoration: none;
-            color: #000000;
-            font-size: 12px;
-            padding: 1em;
-            display: none;
-        }
-
-            .back-to-top:hover {
-                text-decoration: none;
-            }
-
-        div#toc ul {
-            list-style-type: none;
-        }
-    </style>
+    <script src="js/back_to_top.js"></script>
+    <link href="back_to_top.css" rel="stylesheet" type="text/css">
 </head>
 
 <body dir="ltr" lang="en-US" onload="translate();generateTOC(document.getElementById('toc'));">
