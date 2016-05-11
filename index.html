@@ -1522,10 +1522,6 @@
     <h2 class="i18n">Reports</h2>
     <p>
         <span class="i18n" id="reports_1">MMEX allows a variety of reports.</span><br>
-        <span class="i18n" id="reports_2">
-            All the reports can also be printed if required using the menu:
-            File&rarr;Print...&rarr;Current View
-        </span>
     </p>
     <p class="i18n" id="reports_3">
         Select the appropriate report under the Reports node in the
@@ -1604,11 +1600,23 @@
         based on current payments.
     </p>
     <br>
+    <hr>
+
+    <h3 class="i18n">General Report Manager</h3>
+    <a class="i18n" id="grm_href" href="grm.html">General Report Manager</a>
+    <script>
+        var lang = getParameterValue("lang");
+        if (lang !== '')
+            document.getElementById('grm_href').href = "grm.html?lang=" + lang;
+    </script>
+    <br>
+    <hr>
+
     <h3 class="i18n">Printing</h3>
     <p class="i18n" id="printing_1">MMEX supports printing of all reports that can be viewed.</p>
     <p class="i18n" id="printing_2">
-        The print options are available under the menu,
-        File&rarr;Print... Current View
+        All the reports can also be printed if required using the menu:
+        File&rarr;Print...&rarr;Current View
     </p>
 
     <div>
