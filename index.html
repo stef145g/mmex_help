@@ -141,12 +141,14 @@
         one place to another, such as a withdrawal from an ATM, and this
         type of transaction is known as a transfer.
     </p>
-    <table class="table, small">
-        <tr>
-            <td class="i18n" id="concept_5">This can be simplified as shown in the following diagram:</td>
-            <td><img id="mmex_concept" alt='MMEX Concept' src='img/mmex_concept.png'></td>
-        </tr>
-    </table>
+    <div class="row">
+        <div class="col-xs-2">
+            <p class="i18n" id="concept_5">This can be simplified as shown in the following diagram:</p>
+        </div>
+        <div class="col-xs-8 text-info">
+            <p><img class="shadow" id="mmex_concept" alt='MMEX Concept' src='img/mmex_concept.png'></p>
+        </div>
+    </div>
     <script>
         var lang = getParameterValue("lang").substring(0, 2);
         var img_path = "img/mmex_concept.png";
@@ -359,6 +361,7 @@
         </table>
     </div>
     <hr>
+
     <h3 class="i18n">Account Setup Example:</h3>
     <p class="i18n" id="new_acc_18">
         We have a savings account with $1250, a check account with $500,
@@ -437,10 +440,10 @@
             </tr>
         </table>
     </div>
-        <span class="i18n" id="new_acc_23">
-            This views can be temporarily changed to show or hide the
-            appropriate section:
-        </span>
+    <span class="i18n" id="new_acc_23">
+        This views can be temporarily changed to show or hide the
+        appropriate section:
+    </span>
     <ul>
         <li>
             <span class="i18n">Navigation Tree:</span>
@@ -538,7 +541,7 @@
             currency rate changes.
         </li>
     </ul>
-    <p class="i18n">Transaction Status:</p>
+    <p><b><span class="i18n">Transaction Status:</span></b></p>
     <ul>
         <li class="i18n" id="trx_dlg_7">
             Unreconciled: When you enter a transaction, it initially is
@@ -571,7 +574,7 @@
             duplicate if it is recognized as such.
         </li>
     </ul>
-    <p class="i18n">Transaction Types:</p>
+    <p><b><span class="i18n">Transaction Types:</span></b></p>
     <ul>
         <li class="i18n" id="trx_dlg_13">
             Withdrawal: is one where one makes a payment and is an
@@ -600,57 +603,60 @@
             immediate use.
         </li>
     </ul>
-    <a name="Category"></a>
-    <p class="i18n" id="trx_dlg_18">
-        Category: Category selects the kind of expense/income for the
-        transaction.
-    </p>
-    <ul>
-        <li class="i18n" id="trx_dlg_19">
-            Clicking the category button opens up the category dialog.
-            You can select the category from the dialog or create a new
-            category for immediate use.
-        </li>
-    </ul>
-    <p class="i18n" id="trx_dlg_20">
-        Split: This check-box will activate the Split Transactions
-        Dialog
-    </p>
-    <ul>
-        <li class="i18n" id="trx_dlg_21">
-            Split Transactions allows multiple categories to be
-            recorded for a single transaction.
-        </li>
-        <li class="i18n" id="trx_dlg_22">
-            Can allow a transaction to have Income and Expense
-            categories recorded as deposit and withdrawals, provided the
-            overall transaction type is observed and remains positive, for
-            Deposit and Withdrawal transactions.
-        </li>
-    </ul>
-    <div>
-        <span class="label label-danger i18n">Notes:</span>
-        <table class="table">
-            <tr class="warning">
-                <td class="i18n" id="trx_dlg_23">
-                    Do not use the same category for Deposit and
-                    Withdrawal transactions, as this will upset overall
-                    balance figures.
-                </td>
-            </tr>
-        </table>
+
+    <div class="row">
+        <div class="col-xs-8">
+            <a name="Category"></a>
+            <p class="i18n" id="trx_dlg_18">
+                <b>Category:</b> Category selects the kind of expense/income for the
+                transaction.
+            </p>
+            <ul>
+                <li class="i18n" id="trx_dlg_19">
+                    Clicking the category button opens up the category dialog.
+                    You can select the category from the dialog or create a new
+                    category for immediate use.
+                </li>
+            </ul>
+            <p class="i18n" id="trx_dlg_20">
+                Split: This check-box will activate the Split Transactions
+                Dialog
+            </p>
+            <ul>
+                <li class="i18n" id="trx_dlg_21">
+                    Split Transactions allows multiple categories to be
+                    recorded for a single transaction.
+                </li>
+                <li class="i18n" id="trx_dlg_22">
+                    Can allow a transaction to have Income and Expense
+                    categories recorded as deposit and withdrawals, provided the
+                    overall transaction type is observed and remains positive, for
+                    Deposit and Withdrawal transactions.
+                </li>
+            </ul>
+        </div>
+        <div class="notes col-xs-2">
+            <h4 class="i18n">Notes:</h4>
+            <span class="i18n" id="trx_dlg_23">
+                Do not use the same category for Deposit and
+                Withdrawal transactions.
+            </span>
+        </div>
     </div>
+
     <a name="Number"></a>
     <p class="i18n" id="trx_dlg_24">
-        Transaction number: This field to enter any kind of number
+        <b>Transaction number:</b> This field to enter any kind of number
         associated with the transaction like check number.
     </p>
+
     <a name="Notes"></a>
     <p class="i18n" id="trx_dlg_25">
-        Notes: This field can be used to record any special notes with
+        <b>Notes:</b> This field can be used to record any special notes with
         regards to the transaction. The button under Notes can be used to
         select commonly used field notes.
     </p>
+
     <hr>
     <h3 class="i18n">Editing and Updating Transactions</h3>
     <p class="i18n" id="trx_dlg_27">
@@ -673,67 +679,68 @@
     <hr>
 
     <h3 class="i18n" id="filter_1">Transaction Filtering in Accounts</h3>
-    <p class="i18n" id="filter_2">
-        Transactions can be filtered by either fixed filters or, by
-        using the Transaction Filter in the Account View. This will allow
-        the user to limit the visible transactions to those defined by the
-        appropriate filter. These filtered transactions can then be easily
-        selected and individually modified.
-    </p>
-    <p class="i18n" id="trx_del_1">
-        These visible transactions can also be deleted in bulk if so
-        desired.
-    </p>
-    <div>
-        <span class="label label-danger i18n">Notes:</span>
-        <table class="table">
-            <tr class="warning">
-                <td class="i18n" id="trx_del_2">Caution is advised when deleting transactions.</td>
-            </tr>
-        </table>
+    <div class="row">
+        <div class="col-xs-8">
+            <p class="i18n" id="filter_2">
+                Transactions can be filtered by either fixed filters or, by
+                using the Transaction Filter in the Account View. This will allow
+                the user to limit the visible transactions to those defined by the
+                appropriate filter. These filtered transactions can then be easily
+                selected and individually modified.
+            </p>
+            <p class="i18n" id="trx_del_1">
+                These visible transactions can also be deleted in bulk if so
+                desired.
+            </p>
+        </div>
+        <div class="notes col-xs-2">
+            <h4 class="i18n">Notes:</h4>
+            <span class="i18n" id="trx_del_2">Caution is advised when deleting transactions.</span>
+        </div>
     </div>
     <hr>
 
     <h3 class="i18n">Reconciling and Balancing Transactions</h3>
-    <p>
-        <span class="i18n">Unreconciled Transactions:</span>
-        <ul>
-            <li class="i18n" id="trx_bal_1">
-                This means that they have not been verified with the
-                statement from the financial institution.
-            </li>
-        </ul>
-    </p>
-    <p>
-        <span class="i18n">Reconciled Transactions:</span>
-        <ul>
-            <li class="i18n" id="trx_bal_2">
-                A transaction can be considered reconciled when the details
-                of the transaction match that from the financial
-                institution.
-            </li>
-        </ul>
-    </p>
-    <p class="i18n" id="trx_bal_3">
-        In MMEX, reconciled and unreconciled transactions are shown by
-        different icons. When bank details are not checked against a bank
-        statement, the user can select to set the default as Reconciled
-        when creating transactions in the Options settings.
-    </p>
-    <div>
-        <span class="label label-info i18n">Tips:</span>
-        <table class="table">
-            <tr class="success">
-                <td class="i18n" id="trx_bal_4">
-                    To mark a transaction as reconciled, just select
-                    the transaction and hit the 'r' or 'R' key. To mark a
-                    transaction as unreconciled, just select the
-                    transaction and hit the 'u' or 'U' key.
-                </td>
-            </tr>
-        </table>
+    <div class="row">
+        <div class="col-xs-8">
+            <p>
+                <span class="i18n">Unreconciled Transactions:</span>
+                <ul>
+                    <li class="i18n" id="trx_bal_1">
+                        This means that they have not been verified with the
+                        statement from the financial institution.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <span class="i18n">Reconciled Transactions:</span>
+                <ul>
+                    <li class="i18n" id="trx_bal_2">
+                        A transaction can be considered reconciled when the details
+                        of the transaction match that from the financial
+                        institution.
+                    </li>
+                </ul>
+            </p>
+            <p class="i18n" id="trx_bal_3">
+                In MMEX, reconciled and unreconciled transactions are shown by
+                different icons. When bank details are not checked against a bank
+                statement, the user can select to set the default as Reconciled
+                when creating transactions in the Options settings.
+            </p>
+        </div>
+        <div class="tips col-xs-2">
+            <h4 class="i18n">Tip</h4>
+            <span class="i18n" id="trx_bal_4">
+                To mark a transaction as reconciled, just select
+                the transaction and hit the 'r' or 'R' key. To mark a
+                transaction as unreconciled, just select the
+                transaction and hit the 'u' or 'U' key.
+            </span>
+        </div>
     </div>
     <hr>
+
     <h3 class="i18n" id="trx_bal_5">Flagging transactions for followup</h3>
     <p class="i18n" id="trx_bal_6">
         Some transactions might have some issues that you want to follow
@@ -804,11 +811,11 @@
                 </span><br>
             </li>
         </ul>
-            <span class="i18n">Notes:</span>
-            <span class="i18n" id="curr_56">
-                All changes will be lost if the Update button is not used
-                before Closing.
-            </span>
+        <span class="i18n">Notes:</span>
+        <span class="i18n" id="curr_56">
+            All changes will be lost if the Update button is not used
+            before Closing.
+        </span>
 
     </p>
     <p class="i18n" id="curr_57">
@@ -1113,7 +1120,7 @@
         file typically has the following structure:
         <div class="row">
             <div class="col-xs-1"></div>
-            <div class=" col-xs-10 text-info">
+            <div class="col-xs-10 text-info">
                 !Type:type identifier string<br>
                 [single character line code]Literal String Data<br>
                 ...<br>
@@ -1206,8 +1213,9 @@
     </p>
     <p>
         <span class="i18n">The CSV field options are as follows:</span><br>
-        <span class="i18n" id="import_ucsv_3"><a href="#Date">Date</a>
-            - Date of the transaction 
+        <span class="i18n" id="import_ucsv_3">
+            <a href="#Date">Date</a>
+            - Date of the transaction
             (In the format specified in Options&rarr;DateFormat)
         </span><br>
         <span class="i18n" id="payee_ref">
@@ -1850,36 +1858,45 @@
 
     <!--Frequently Asked Questions-->
     <h2 class="i18n">Frequently Asked Questions</h2>
-    <h3 class="i18n">How can I contribute?</h3>
-    <p class="i18n">You can contribute by</p>
-    <ul>
-        <li class="i18n">Reporting bugs</li>
-        <li class="i18n">Translating to your language</li>
-        <li class="i18n">Helping spread the word</li>
-        <li class="i18n" id="faq_1">
-            If you are a C++ or JS expert, by helping extend MMEX developing code.
-        </li>
-        <li class="i18n" id="faq_2">
-            If you are really very happy because you saved a lot of
-            money by using MMEX, you can donate to the MMEX project.
-        </li>
-    </ul>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-        <input name="cmd" type="hidden" value="_donations">
-        <input name="business" type="hidden" value="moneymanagerex@moneymanagerex.org">
-        <input name="lc" type="hidden" value="US">
-        <input name="item_name" type="hidden" value="MoneyManagerEx">
-        <input name="no_note" type="hidden" value="0">
-        <input name="currency_code" type="hidden" value="USD">
-        <input name="bn" type="hidden" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
-        <input id="paypal" alt="PayPal - The safer, easier way to pay online!"
-               name="submit" src="img/btn_donateCC_LG.gif" type="image">
-        <script type="text/javascript">
-            document.getElementById('paypal').src = "img/btn_donateCC_LG.gif";
-        </script>
 
-    </form>
+    <h3 class="i18n">How can I contribute?</h3>
+
+    <div class="row">
+        <div class="col-xs-3">
+            <br>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input name="cmd" type="hidden" value="_donations">
+                <input name="business" type="hidden" value="moneymanagerex@moneymanagerex.org">
+                <input name="lc" type="hidden" value="US">
+                <input name="item_name" type="hidden" value="MoneyManagerEx">
+                <input name="no_note" type="hidden" value="0">
+                <input name="currency_code" type="hidden" value="USD">
+                <input name="bn" type="hidden" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+                <input id="paypal" alt="PayPal - The safer, easier way to pay online!"
+                       name="submit" src="img/btn_donateCC_LG.gif" type="image">
+                <script type="text/javascript">
+                    document.getElementById('paypal').src = "img/btn_donateCC_LG.gif";
+                </script>
+            </form>
+        </div>
+        <div class="col-xs-7">
+            <p class="i18n">You can contribute by</p>
+            <ul>
+                <li class="i18n">Reporting bugs</li>
+                <li class="i18n">Translating to your language</li>
+                <li class="i18n">Helping spread the word</li>
+                <li class="i18n" id="faq_1">
+                    If you are a C++ or JS expert, by helping extend MMEX developing code.
+                </li>
+                <li class="i18n" id="faq_2">
+                    If you are really very happy because you saved a lot of
+                    money by using MMEX, you can donate to the MMEX project.
+                </li>
+            </ul>
+        </div>
+    </div>
     <hr>
+
     <h3 class="i18n">What's the reason for the EX in the name of the software?</h3>
     <p class="i18n" id="faq_3">
         Originally I developed a personal finance software called Money
