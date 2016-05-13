@@ -70,6 +70,9 @@ img.shadow {
   -moz-transform:rotate(-6deg);
 }
 
-h4{
-    color:#f00;
+header.tips_header{
+    color:#00f
+}
+header.notes_header {
+    color: #f00;
 }
