@@ -30,7 +30,7 @@
     <hr>
 
     <h2 class="i18n">Stocks, Shares and Share Dividend Management in MMEX</h2>
-    <p>
+    <p class="i18n">
         <span class="i18n" id="ssd_001">
             The terms <strong>Stocks</strong> and <strong>Shares</strong> generally mean the
             same thing but depending on how we use these terms, could mean something
@@ -48,14 +48,14 @@
     </p>
     <ol>
         <li>
-            <p class="i18n" id="ssd_004">
+            <span class="i18n" id="ssd_004">
                 First we create the Stock Entry and the associated Share Account.
-            </p><br />
+            </span>
         </li>
         <li>
-            <p class="i18n" id="ssd_005">
+            <span class="i18n" id="ssd_005">
                 We add the initial Shares information to our Share Account.
-            </p><br />
+            </span>
         </li>
     </ol>
     <p class="i18n" id="ssd_006">
@@ -94,7 +94,7 @@
         we would create new entries in the stock portfolio view for our
         companies.
     </p>
-    <p>
+    <p class="i18n">
         <span class="i18n" id="ssd_014">
             <strong>As an initial entry for each company we would supply the following</strong>:
         </span>
@@ -121,57 +121,54 @@
             </span><br />
         </li>
         <li>
-            <strong>Share Number</strong> being the initial number of shares<br />
+            <span class="i18n"><b>Share Number</b> being the initial number of shares</span>
         </li>
         <li>
-            &nbsp;<strong>
-                Share Price<br />
-            </strong>This is the cost per share<br />
+            <span class="i18n" id="ssd_021"><b>Share Price</b></span><br />
+            <span class="i18n" id="ssd_022">This is the cost per share</span>
         </li>
         <li>
-            <span class="i18n" id="ssd_021"><strong>Commission</strong></span><br />
-            <span class="i18n" id="ssd_022">This is generally the remaining value for incomplete shares</span><br />
-            <span class="i18n" id="ssd_023">
+            <span class="i18n" id="ssd_023"><strong>Commission</strong></span><br />
+            <span class="i18n" id="ssd_024">This is generally the remaining value for incomplete shares</span><br />
+            <span class="i18n" id="ssd_025">
                 Example: Purchase of $1000.00 worth of shares at $2.35 per share, gives us 425
                 shares and $1.25 as commission.
             </span>
         </li>
     </ol>
     <p>
-        <strong>
-            Note:<br />
-        </strong>The fields <strong>Date</strong>, <strong>Share Number</strong>, <strong>Share Price</strong> and <strong>Commission</strong> are duplicated for each share transaction that we enter.<br />
-        The Date in the Stock Portfolio view becomes obsolete, and it is recommended that this field is hidden.
+        <strong>Note:</strong><br />   
+        <span class="i18n" id="ssd_026">
+            The fields <strong>Date</strong>, <strong>Share Number</strong>,
+            <strong>Share Price</strong> and <strong>Commission</strong> are duplicated
+            for each share transaction that we enter.
+        </span><br />
+        <span class="i18n" id="ssd_027">
+            The Date in the Stock Portfolio view becomes obsolete,
+            and it is recommended that this field is hidden.
+        </span>
     </p>
 
     <p class="i18n" id="ssd_img01">New Stock Investment example:</p>
     <div class="row">
-        <div class="col-xs-9">
-            <div class="row">
-                <div class="col-xs-1">
-                </div>
-                <div class="col-xs-9 text-info">
-                    <p><img class="shadow" id="stock_shares_new_stock" alt='stock_shares_new_stock' src='img/stock_shares_new_stock.png'></p>
-                </div>
-            </div>
-            <script>
-                var lang = getParameterValue("lang").substring(0, 3);
-                var img_path = "img/stock_shares_new_stock.png";
-                if (lang == 'rus')
-                    img_path = "img/stock_shares_new_stock_rus.png";
-                else if (lang == 'pol')
-                    img_path = "img/stock_shares_new_stock_pol.png";
-                else if (lang == 'hun')
-                    img_path = "img/stock_shares_new_stock_hun.png";
-                document.getElementById('stock_shares_new_stock').src = img_path;
-            </script>
-
-            <p class="i18n" id="ssd_024">
-                saving this entry, the Share Account and Share Linkage can be set up.<br />
-                Subsequent use of this dialog allows us to update the share price for this stock. When aditional shares have been purchased, this price will affect all shares.<br />
-            </p>
+        <div class="col-xs-1">
         </div>
-        <div class="notes col-xs-3">
+        <div class="col-xs-8 text-info">
+            <p class="i18n"><img class="shadow" id="stock_shares_new_stock" alt='stock_shares_new_stock' src='img/stock_shares_new_stock.png'></p>
+        </div>
+        <script>
+            var lang = getParameterValue("lang").substring(0, 3);
+            var img_path = "img/stock_shares_new_stock.png";
+            /*if (lang == 'rus')
+                img_path = "img/stock_shares_new_stock_rus.png";
+            else if (lang == 'pol')
+                img_path = "img/stock_shares_new_stock_pol.png";
+            else if (lang == 'hun')
+                img_path = "img/stock_shares_new_stock_hun.png";*/
+            document.getElementById('stock_shares_new_stock').src = img_path;
+        </script>
+
+        <div class="notes col-xs-1">
             <header class="i18n notes_header">Note</header>
             <span class="i18n" id="ssd_note_01">
                 Important: Save before close to keep any changes
@@ -179,187 +176,255 @@
         </div>
     </div>
 
+    <p>
+        <span class="i18n" id="ssd_024">saving this entry, the Share Account and Share Linkage can be set up.</span><br />
+        <span class="i18n" id="ssd_025">
+            Subsequent use of this dialog allows us to update the share price for this stock.
+        </span>
+        <span class="i18n" id="ssd_026">
+            When aditional shares have been purchased, this price will affect all shares.
+        </span><br />
+    </p>
+
     <hr />
     <h3 class="i18n">Adding Initial Shares to our Stock</h3>
-    <p>
-        <span class="i18n" id="ssd_025">
+    <p class="i18n">
+        <span class="i18n" id="ssd_027">
             Now that we have created the initial Stock entry, we need to Add a Transaction
             to our Stock to create the initial Shares entry.
         </span>
-        <span class="i18n" id="ssd_026">
+        <span class="i18n" id="ssd_028">
             The initial share information
             is transfered to our new share transaction.
         </span>
     </p>
-    <p class="i18n" id="ssd_027">
+    <p class="i18n" id="ssd_029">
         Here we would add extra information similar to a normal transaction.
     </p>
     <ol>
         <li>
-            <strong>Account</strong><br />
-            This would be the associated Share Account created when the Stock was initially
-            created. If this was not done, any other account can be used for this
-            transaction. In order to keep track of transactions, it is recommended that a
-            Share Account is created.
+            <span class="i18n">Account</span><br />
+            <span class="i18n" id="ssd_030">
+                This would be the associated Share Account created when the Stock was initially
+                created. If this was not done, any other account can be used for this
+                transaction.
+            </span>
+            <span class="i18n" id="ssd_031">
+                In order to keep track of transactions, it is recommended that a
+                Share Account is created.
+            </span>
+        </li>        
+        <li>
+            <span class="i18n" id="ssd_032"><strong>Type</strong> - Deposit or Withdrawal - Transfer</span><br />
+            <span class="i18n" id="ssd_033">Withdrawal from the share account represents a deposit to the actual shares</span><br />
+            <span class="i18n" id="ssd_034">Deposit from the share account represents a withdrawal to the actual shares</span>
         </li>
         <li>
-            <strong>Type</strong> - Deposit or Withdrawal - Transfer<br />
-            Withdrawal from the share account represents a deposit to the actual shares<br />
-            Deposit from the share account represents a withdrawal to the actual shares<br />
-        </li>
-        <li>
-            <strong>Transfer</strong><br />
-            All Share transactions are in effect transfers to and from actual share
-            investments depending on the transaction being a purchase or sale of shares.<br />
-            If the transaction is required to be accounted as an expense or as income, we
-            would then remove the transfer selection.
+            <span class="i18n">Transfer</span><br />
+            <span class="i18n" id="ssd_035">
+                All Share transactions are in effect transfers to and from actual share
+                investments depending on the transaction being a purchase or sale of shares.
+            </span><br />
+            <span class="i18n" id="ssd_036">
+                If the transaction is required to be accounted as an expense or as income, we
+                would then remove the transfer selection.
+            </span>
         </li>
     </ol>
 
-    <table style="width: 100%">
-        <caption>
-            <strong>Addition of Shares to our transaction</strong>
-        </caption>
-        <tr>
-            <td>
-                <img alt="stock_shares_new_shares" src="img/stock_shares_new_shares.png" />
-            </td>
-        </tr>
-    </table>
+    <div class="row">
+        <div class="col-xs-2">
+            <p class="i18n">Addition of Shares to our transaction</p>
+        </div>
+        <div class="col-xs-8 text-info">
+            <img class="shadow" id="stock_shares_new_shares" alt='stock_shares_new_shares' src='img/stock_shares_new_shares.png'>
+        </div>
+    </div>
+    <script>
+        var lang = getParameterValue("lang").substring(0, 3);
+        var img_path = "img/stock_shares_new_shares.png";
+        /*if (lang == 'rus')
+            img_path = "img/stock_shares_new_shares_rus.png";
+        else if (lang == 'pol')
+            img_path = "img/stock_shares_new_shares_pol.png";
+        else if (lang == 'hun')
+            img_path = "img/stock_shares_new_shares_hun.png";*/
+        document.getElementById('stock_shares_new_shares').src = img_path;
+    </script>
     <hr />
-    <h3>
-        Adding Subsequent Share Entries to our Stock
-    </h3>
-    <p>
+
+    <h3 class="i18n">Adding Subsequent Share Entries to our Stock</h3>
+    <p class="i18n">
         Purchase or sale of shares is achieved by accessing the stock entry in the Stock
         Portfolio view and adding new transaction.
     </p>
-    <p>
+    <p class="i18n">
         Here we need to add the share information and control the purchase or sale via
         the transaction section of the share entry:
     </p>
     <ul>
         <li>
-            <strong>Share Purchase</strong><br />
-            Transaction type is <strong>Withdrawal</strong>
+            <span class="i18n" style="font-weight: bold;">Share Purchase</span><br />
+            <span class="i18n">Transaction type is <b>Withdrawal</b></span>
         </li>
         <li>
-            <strong>Share Sale</strong><br />
-            Transaction type is <strong>Deposit</strong>
+            <span class="i18n" style="font-weight: bold;">Share Sale</span><br />
+            <span class="i18n">Transaction type is <strong>Deposit</strong></span>
         </li>
     </ul>
-    <p>&nbsp;</p>
     <hr>
-    <h2>Stock Portfolio Account</h2>
-    <p>
-        Our Stock Portfolio Account
-        now displays a summary of the Stocks we have.
+
+    <h2 class="i18n">Stock Portfolio Account</h2>
+    <p class="i18n">
+        <span class="i18n">
+            Our Stock Portfolio Account
+            now displays a summary of the Stocks we have.
+        </span>
     </p>
     <ol>
-        <li>The stock broker name is used to define the Stock Investment name.</li>
-        <li>
-            The
-            companies we buy shares from become the share name.
+        <li><span class="i18n">The stock broker name is used to define the Stock Investment name.</span>
         </li>
         <li>
-            Shares are generally associated with a Share
-            Account having the same name as the company name.
+            <span class="i18n">
+                The
+                companies we buy shares from become the share name
+            </span>
         </li>
-        <li>The Shares Accounts heading can be seen by using the menu item: <strong>View</strong> ---&gt; <strong>Display Share Accounts</strong></li>
+        <li>
+            <span class="i18n">
+                Shares are generally associated with a Share
+                Account having the same name as the company name.
+            </span>
+        </li>
+        <li>
+            <span class="i18n">
+                The Shares Accounts heading can be seen by using the menu item:
+                <strong>View</strong> ---&gt; <strong>Display Share Accounts</strong>
+            </span>
+        </li>
     </ol>
-    <p>
-        Example:<br />
-        Companies&nbsp;Alpha Corp and Beta Corp maintain their accounts with Yahoo
-        Finance.<br />
-        Here we have hidden various headings as these become meaningless in this view.
+    <p class="i18n">
+        <span class="i18n">Example:</span><br />
+        <span class="i18n">
+            Companies&nbsp;Alpha Corp and Beta Corp maintain their accounts with Yahoo
+            Finance.
+        </span><br />
+        <span class="i18n">Here we have hidden various headings as these become meaningless in this view.</span>
     </p>
-    <p>
-        <strong>Note</strong>:<br />
-        Initial share price is not listed in this view.<br />
-        This is because the share price becomes meaningless in a summary view as each purchase will generally have a different share price.<br />
+    <p class="i18n">
+        <span class="i18n">Note:</span><br />
+        <span class="i18n">Initial share price is not listed in this view.</span><br />
+        <span class="i18n">
+            This is because the share price becomes meaningless in a summary
+            view as each purchase will generally have a different share price.
+        </span><br />
     </p>
-    <table style="width: 100%">
-        <caption> <strong>Stock Portfolio view containing our new Stocks</strong></caption>
-        <tr>
-            <td><img alt="stock_shares_portfolio" src="img/stock_shares_portfolio.png" /></td>
-        </tr>
-    </table>
 
-
-    <p>
-        &nbsp;
-    </p>
-    <p>
-        <br />
-    </p>
+    <div class="row">
+        <p class="i18n">Stock Portfolio view containing our new Stocks</p>
+        <div class="col-xs-9 text-info">
+            <img class="shadow" id="stock_shares_portfolio" alt='stock_shares_portfolio' src='img/stock_shares_portfolio.png'>
+        </div>
+    </div>
+    <script>
+        var lang = getParameterValue("lang").substring(0, 3);
+        var img_path = "img/stock_shares_portfolio.png";
+        /*if (lang == 'rus')
+            img_path = "img/stock_shares_portfolio_rus.png";
+        else if (lang == 'pol')
+            img_path = "img/stock_shares_portfolio_pol.png";
+        else if (lang == 'hun')
+            img_path = "img/stock_shares_portfolio_hun.png";*/
+        document.getElementById('stock_shares_portfolio').src = img_path;
+    </script>
     <hr>
-    <h2>Stock Transaction List View</h2>
 
+    <h2 class="i18n">Stock Transaction List View</h2>
+    <p class="i18n">When we have added shares to our account we can see the associated share transactions using the View Transactions</p>
 
-    <p>When we have added shares to our account we can see the associated share transactions using the View Transactions</p>
-    <table style="width: 100%">
-        <caption> <strong>Stock list from Portfolio view for our stock</strong></caption>
-        <tr>
-            <td><img alt="stock_shares_view_transactions" src="img/stock_shares_view_transactions.png" /></td>
-        </tr>
-    </table>
-    <p>
-        <br />
-    </p>
+    <div class="row">
+        <div class="col-xs-2">
+            <p class="i18n">Stock list from Portfolio view for our stock</p>
+        </div>
+        <div class="col-xs-8 text-info">
+            <img class="shadow" id="stock_shares_view_transactions" alt='stock_shares_view_transactions' src='img/stock_shares_view_transactions.png'>
+        </div>
+    </div>
+    <script>
+        var lang = getParameterValue("lang").substring(0, 3);
+        var img_path = "img/stock_shares_view_transactions.png";
+        /*if (lang == 'rus')
+            img_path = "img/stock_shares_view_transactions_rus.png";
+        else if (lang == 'pol')
+            img_path = "img/stock_shares_view_transactions_pol.png";
+        else if (lang == 'hun')
+            img_path = "img/stock_shares_view_transactions_hun.png";*/
+        document.getElementById('stock_shares_view_transactions').src = img_path;
+    </script>
     <hr>
+
     <h2 class="i18n">Share Accounts in MMEX</h2>
-    <p>
+    <p class="i18n">
         A Share account contain the transactions that are associated with this company stock.
     </p>
-    <p>
+    <p class="i18n">
         Initially we would set aside money for investment in Stocks and Shares. This is achieved by transferring money from our general accounts to a Share account.
     </p>
-    <p>
+    <p class="i18n">
         As shares are purchased and dividends received, we can now keep track of our investment over time.
     </p>
-    <p>
+    <p class="i18n">
         In a transactions, we can also use the company name as a Payee. It&nbsp; is also advisable to create categories of:
     </p>
     <ol>
         <li>
-            Share:
-            Purchase
+            <span class="i18n">Share: Purchase</span>
         </li>
-        <li>Share: Dividend</li>
-        <li>Share: Sale</li>
+        <li><span class="i18n">Share: Dividend</span></li>
+        <li><span class="i18n">Share: Sale</span></li>
     </ol>
-    <table style="width: 100%">
-        <caption><strong>Account View for the Share Account: Alpha Corp</strong></caption>
-        <tr>
-            <td>
-                <img alt="stock_shares_share_account" src="img/stock_shares_share_account.png" />
-            </td>
-        </tr>
-    </table>
-    <p>
-    </p>
+
+    <p class="i18n">Account View for the Share Account: Alpha Corp</p>
+    <p class="i18n">Stock list from Portfolio view for our stock</p>
+    <div class="row">
+        <div class="col-xs-9 text-info">
+            <img class="shadow" id="stock_shares_share_account" alt='stock_shares_share_account' src='img/stock_shares_share_account.png'>
+        </div>
+    </div>
+    <script>
+        var lang = getParameterValue("lang").substring(0, 3);
+        var img_path = "img/stock_shares_share_account.png";
+        /*if (lang == 'rus')
+            img_path = "img/stock_shares_share_account_rus.png";
+        else if (lang == 'pol')
+            img_path = "img/stock_shares_share_account_pol.png";
+        else if (lang == 'hun')
+            img_path = "img/stock_shares_share_account_hun.png";*/
+        document.getElementById('stock_shares_share_account').src = img_path;
+    </script>
     <hr>
 
 
     <h2 class="i18n">Adding Dividends to our Shares.</h2>
-    <p class="auto-style1">
+    <p class="i18n">
         Accessing our share account, we can add ordinary transactions to our shares account.
     </p>
     <ol>
         <li>
-            <p class="auto-style1">
+            <p class="i18n">
                 A share dividend transaction becomes a normal transaction.
             </p>
         </li>
         <li>
-            <p class="auto-style1">
-                The
-                same rules for Income and Expense apply to share accounts when a transaction is created in the Account View.
+            <p class="i18n">
+                The same rules for Income and Expense apply to share accounts
+                when a transaction is created in the Account View.
             </p>
         </li>
         <li>
-            <p class="auto-style1">
-                Actual commissions paid to a stock broker should also be recorded as a separate transaction.
+            <p class="i18n">
+                Actual commissions paid to a stock broker should also
+                be recorded as a separate transaction.
             </p>
         </li>
     </ol>
